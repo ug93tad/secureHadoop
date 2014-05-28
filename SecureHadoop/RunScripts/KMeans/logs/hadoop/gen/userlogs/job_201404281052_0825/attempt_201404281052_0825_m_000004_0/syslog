@@ -1,0 +1,12 @@
+2014-05-02 20:07:11,308 INFO org.apache.hadoop.util.NativeCodeLoader: Loaded the native-hadoop library
+2014-05-02 20:07:11,530 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=MAP, sessionId=
+2014-05-02 20:07:11,531 WARN org.apache.hadoop.conf.Configuration: user.name is deprecated. Instead, use mapreduce.job.user.name
+2014-05-02 20:07:11,682 INFO org.apache.hadoop.mapreduce.util.ProcessTree: setsid exited with exit code 0
+2014-05-02 20:07:11,687 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.mapreduce.util.LinuxResourceCalculatorPlugin@356525f7
+2014-05-02 20:07:11,748 WARN org.apache.hadoop.mapreduce.util.ProcfsBasedProcessTree: The process 25889 may have finished in the interim.
+2014-05-02 20:07:11,748 WARN org.apache.hadoop.mapreduce.util.ProcfsBasedProcessTree: The process 25890 may have finished in the interim.
+2014-05-02 20:07:11,748 WARN org.apache.hadoop.mapreduce.util.ProcfsBasedProcessTree: The process 25891 may have finished in the interim.
+2014-05-02 20:07:11,751 INFO org.apache.hadoop.mapred.Task: Cleaning up job
+2014-05-02 20:07:11,751 INFO org.apache.hadoop.mapred.Task: Committing job
+2014-05-02 20:07:11,891 INFO org.apache.hadoop.mapred.Task: Task:attempt_201404281052_0825_m_000004_0 is done. And is in the process of commiting
+2014-05-02 20:07:11,961 INFO org.apache.hadoop.mapred.Task: Task 'attempt_201404281052_0825_m_000004_0' done.

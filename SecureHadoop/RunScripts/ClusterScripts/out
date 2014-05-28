@@ -1,0 +1,263 @@
+Running with 16 nodes
+stopping namenode
+awan-2-02-0: no datanode to stop
+awan-2-05-0: no datanode to stop
+awan-2-14-0: no datanode to stop
+awan-2-06-0: no datanode to stop
+awan-2-12-0: no datanode to stop
+awan-2-16-0: no datanode to stop
+awan-2-03-0: no datanode to stop
+awan-2-01-0: stopping datanode
+awan-2-04-0: no datanode to stop
+awan-2-11-0: no datanode to stop
+awan-2-19-0: stopping secondarynamenode
+stopping jobtracker
+awan-2-03-0: no tasktracker to stop
+awan-2-01-0: stopping tasktracker
+awan-2-05-0: no tasktracker to stop
+awan-2-04-0: no tasktracker to stop
+awan-2-10-0: no tasktracker to stop
+awan-2-12-0: no tasktracker to stop
+awan-2-16-0: no tasktracker to stop
+awan-2-13-0: no tasktracker to stop
+awan-2-07-0: no tasktracker to stop
+awan-2-14-0: no tasktracker to stop
+awan-2-08-0: no tasktracker to stop
+awan-2-15-0: no tasktracker to stop
+starting namenode, logging to /data1/anh/logs/hadoop-dinhtta-namenode-awan-2-00-0.awan.comp.nus.edu.sg.out
+awan-2-06-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-06-0.awan.comp.nus.edu.sg.out
+awan-2-01-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-01-0.awan.comp.nus.edu.sg.out
+awan-2-02-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-02-0.awan.comp.nus.edu.sg.out
+awan-2-08-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-08-0.awan.comp.nus.edu.sg.out
+awan-2-12-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-12-0.awan.comp.nus.edu.sg.out
+awan-2-11-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-11-0.awan.comp.nus.edu.sg.out
+awan-2-19-0: starting secondarynamenode, logging to /data1/anh/logs/hadoop-dinhtta-secondarynamenode-awan-2-19-0.awan.comp.nus.edu.sg.out
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Safe mode is OFF
+starting jobtracker, logging to /data1/anh/logs/hadoop-dinhtta-jobtracker-awan-2-00-0.awan.comp.nus.edu.sg.out
+awan-2-01-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-01-0.awan.comp.nus.edu.sg.out
+awan-2-06-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-06-0.awan.comp.nus.edu.sg.out
+awan-2-03-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-03-0.awan.comp.nus.edu.sg.out
+awan-2-12-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-12-0.awan.comp.nus.edu.sg.out
+awan-2-14-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-14-0.awan.comp.nus.edu.sg.out
+awan-2-05-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-05-0.awan.comp.nus.edu.sg.out
+awan-2-13-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-13-0.awan.comp.nus.edu.sg.out
+awan-2-16-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-16-0.awan.comp.nus.edu.sg.out
+stopping namenode
+awan-2-04-0: stopping datanode
+awan-2-06-0: stopping datanode
+awan-2-03-0: stopping datanode
+awan-2-01-0: stopping datanode
+awan-2-16-0: stopping datanode
+awan-2-19-0: stopping secondarynamenode
+stopping jobtracker
+awan-2-04-0: stopping tasktracker
+awan-2-14-0: stopping tasktracker
+awan-2-02-0: stopping tasktracker
+awan-2-05-0: stopping tasktracker
+awan-2-11-0: stopping tasktracker
+awan-2-01-0: stopping tasktracker
+awan-2-08-0: stopping tasktracker
+awan-2-10-0: stopping tasktracker
+awan-2-13-0: stopping tasktracker
+awan-2-15-0: stopping tasktracker
+awan-2-16-0: stopping tasktracker
+awan-2-09-0: stopping tasktracker
+awan-2-07-0: stopping tasktracker
+starting namenode, logging to /data1/anh/logs/hadoop-dinhtta-namenode-awan-2-00-0.awan.comp.nus.edu.sg.out
+awan-2-05-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-05-0.awan.comp.nus.edu.sg.out
+awan-2-04-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-04-0.awan.comp.nus.edu.sg.out
+awan-2-11-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-11-0.awan.comp.nus.edu.sg.out
+awan-2-08-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-08-0.awan.comp.nus.edu.sg.out
+awan-2-14-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-14-0.awan.comp.nus.edu.sg.out
+awan-2-19-0: starting secondarynamenode, logging to /data1/anh/logs/hadoop-dinhtta-secondarynamenode-awan-2-19-0.awan.comp.nus.edu.sg.out
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Safe mode is OFF
+starting jobtracker, logging to /data1/anh/logs/hadoop-dinhtta-jobtracker-awan-2-00-0.awan.comp.nus.edu.sg.out
+awan-2-04-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-04-0.awan.comp.nus.edu.sg.out
+awan-2-11-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-11-0.awan.comp.nus.edu.sg.out
+awan-2-02-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-02-0.awan.comp.nus.edu.sg.out
+Running Wordcount
+Running Grep
+Running Terasort
+Running aggregate
+Running Pagerank
+Runnign KMeans
+Running with 4 nodes
+stopping namenode
+awan-2-02-0: stopping datanode
+awan-2-15-0: stopping datanode
+awan-2-01-0: stopping datanode
+awan-2-14-0: stopping datanode
+awan-2-12-0: stopping datanode
+awan-2-11-0: stopping datanode
+awan-2-06-0: stopping datanode
+awan-2-03-0: stopping datanode
+awan-2-04-0: stopping datanode
+awan-2-19-0: stopping secondarynamenode
+stopping jobtracker
+awan-2-06-0: stopping tasktracker
+awan-2-05-0: stopping tasktracker
+awan-2-04-0: stopping tasktracker
+awan-2-08-0: stopping tasktracker
+awan-2-01-0: stopping tasktracker
+awan-2-09-0: stopping tasktracker
+awan-2-12-0: stopping tasktracker
+awan-2-13-0: stopping tasktracker
+awan-2-16-0: stopping tasktracker
+awan-2-15-0: stopping tasktracker
+awan-2-03-0: stopping tasktracker
+awan-2-07-0: stopping tasktracker
+awan-2-10-0: stopping tasktracker
+awan-2-02-0: stopping tasktracker
+awan-2-11-0: stopping tasktracker
+awan-2-14-0: stopping tasktracker
+starting namenode, logging to /data1/anh/logs/hadoop-dinhtta-namenode-awan-2-00-0.awan.comp.nus.edu.sg.out
+awan-2-02-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-02-0.awan.comp.nus.edu.sg.out
+awan-2-01-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-01-0.awan.comp.nus.edu.sg.out
+awan-2-04-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-04-0.awan.comp.nus.edu.sg.out
+awan-2-19-0: starting secondarynamenode, logging to /data1/anh/logs/hadoop-dinhtta-secondarynamenode-awan-2-19-0.awan.comp.nus.edu.sg.out
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Safe mode is OFF
+starting jobtracker, logging to /data1/anh/logs/hadoop-dinhtta-jobtracker-awan-2-00-0.awan.comp.nus.edu.sg.out
+awan-2-01-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-01-0.awan.comp.nus.edu.sg.out
+awan-2-02-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-02-0.awan.comp.nus.edu.sg.out
+awan-2-04-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-04-0.awan.comp.nus.edu.sg.out
+stopping namenode
+awan-2-06-0: no datanode to stop
+awan-2-01-0: stopping datanode
+awan-2-16-0: no datanode to stop
+awan-2-19-0: stopping secondarynamenode
+stopping jobtracker
+awan-2-03-0: stopping tasktracker
+awan-2-07-0: no tasktracker to stop
+awan-2-01-0: stopping tasktracker
+awan-2-15-0: no tasktracker to stoawan-2-11-0: no tasktracker to stop
+awan-2-13-0: no tasktracker to stop
+awan-2-16-0: no tasktracker to stop
+awan-2-10-0: no tasktracker to stop
+starting namenode, logging to /data1/anh/logs/hadoop-dinhtta-namenode-awan-2-00-0.awan.comp.nus.edu.sg.out
+awan-2-03-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-03-0.awan.comp.nus.edu.sg.out
+awan-2-04-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-04-0.awan.comp.nus.edu.sg.out
+awan-2-02-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-02-0.awan.comp.nus.edu.sg.out
+awan-2-19-0: starting secondarynamenode, logging to /data1/anh/logs/hadoop-dinhtta-secondarynamenode-awan-2-19-0.awan.comp.nus.edu.sg.out
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Safe mode is OFF
+starting jobtracker, logging to /data1/anh/logs/hadoop-dinhtta-jobtracker-awan-2-00-0.awan.comp.nus.edu.sg.out
+awan-2-02-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-02-0.awan.comp.nus.edu.sg.out
+awan-2-03-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-03-0.awan.comp.nus.edu.sg.out
+Running Wordcount
+Running Grep
+Running Terasort
+Running aggregate
+Running Pagerank
+Runnign KMeans
+Running with 2 nodes
+stopping namenode
+awan-2-04-0: stopping datanode
+awan-2-02-0: stopping datanode
+awan-2-03-0: stopping datanode
+awan-2-01-0: stopping datanode
+awan-2-19-0: stopping secondarynamenode
+stopping jobtracker
+awan-2-03-0: stopping tasktracker
+awan-2-01-0: stopping tasktracker
+awan-2-02-0: stopping tasktracker
+starting namenode, logging to /data1/anh/logs/hadoop-dinhtta-namenode-awan-2-00-0.awan.comp.nus.edu.sg.out
+awan-2-02-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-02-0.awan.comp.nus.edu.sg.out
+awan-2-01-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-01-0.awan.comp.nus.edu.sg.out
+awan-2-19-0: starting secondarynamenode, logging to /data1/anh/logs/hadoop-dinhtta-secondarynamenode-awan-2-19-0.awan.comp.nus.edu.sg.out
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Safe mode is OFF
+starting jobtracker, logging to /data1/anh/logs/hadoop-dinhtta-jobtracker-awan-2-00-0.awan.comp.nus.edu.sg.out
+awan-2-01-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-01-0.awan.comp.nus.edu.sg.out
+awan-2-02-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-02-0.awan.comp.nus.edu.sg.out
+Running Wordcount
+Running Grep
+Running Terasort
+Running aggregate
+Running Pagerank
+Runnign KMeans
+Running with 1 nodes
+stopping namenode
+awan-2-05-0: no datanode to stop
+awan-2-06-0: no datanode to stop
+awan-2-07-0: no datanode to stop
+awan-2-04-0: no datanode to stop
+awan-2-15-0: no datanode to stop
+awan-2-12-0: no datanode to stop
+awan-2-14-0: no datanode to stop
+awan-2-11-0: no datanode to stop
+awan-2-01-0: stopping datanode
+awan-2-02-0: stopping datanode
+awan-2-19-0: stopping secondarynamenode
+stopping jobtracker
+awan-2-09-0: no tasktracker to stop
+awan-2-06-0: no tasktracker to stop
+awan-2-01-0: stopping tasktracker
+awan-2-03-0: no tasktracker to stop
+awan-2-16-0: no tasktracker to stop
+awan-2-14-0: no tasktracker to stop
+awan-2-15-0: no tasktracker to stop
+starting namenode, logging to /data1/anh/logs/hadoop-dinhtta-namenode-awan-2-00-0.awan.comp.nus.edu.sg.out
+awan-2-01-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-01-0.awan.comp.nus.edu.sg.out
+awan-2-19-0: starting secondarynamenode, logging to /data1/anh/logs/hadoop-dinhtta-secondarynamenode-awan-2-19-0.awan.comp.nus.edu.sg.out
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Safe mode is OFF
+starting jobtracker, logging to /data1/anh/logs/hadoop-dinhtta-jobtracker-awan-2-00-0.awan.comp.nus.edu.sg.out
+awan-2-01-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-01-0.awan.comp.nus.edu.sg.out
+stopping namenode
+awan-2-04-0: no datanode to stop
+awan-2-03-0: no datanode to stop
+awan-2-08-0: no datanode to stop
+awan-2-13-0: no datanode to stop
+awan-2-01-0: stopping datanode
+awan-2-10-0: no datanode to stop
+awan-2-14-0: no datanode to stop
+awan-2-02-0: no datanode to stop
+awan-2-15-0: no datanode to stop
+awan-2-09-0: no datanode to stop
+awan-2-05-0: no datanode to stop
+awan-2-06-0: no datanode to stop
+awan-2-07-0: no datanode to stop
+awan-2-19-0: stopping secondarynamenode
+stopping jobtracker
+awan-2-08-0: no tasktracker to stop
+awan-2-06-0: no tasktracker to stop
+awan-2-04-0: no tasktracker to stop
+awan-2-13-0: no tasktracker to stop
+awan-2-14-0: no tasktracker to stop
+awan-2-15-0: no tasktracker to stop
+awan-2-09-0: no tasktracker to stop
+awan-2-16-0: no tasktracker to stop
+awan-2-02-0: no tasktracker to stop
+awan-2-11-0: no tasktracker to stop
+awan-2-10-0: no tasktracker to stop
+starting namenode, logging to /data1/anh/logs/hadoop-dinhtta-namenode-awan-2-00-0.awan.comp.nus.edu.sg.out
+awan-2-01-0: starting datanode, logging to /data1/anh/logs/hadoop-dinhtta-datanode-awan-2-01-0.awan.comp.nus.edu.sg.out
+awan-2-19-0: starting secondarynamenode, logging to /data1/anh/logs/hadoop-dinhtta-secondarynamenode-awan-2-19-0.awan.comp.nus.edu.sg.out
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Safe mode is OFF
+starting jobtracker, logging to /data1/anh/logs/hadoop-dinhtta-jobtracker-awan-2-00-0.awan.comp.nus.edu.sg.out
+awan-2-01-0: starting tasktracker, logging to /data1/anh/logs/hadoop-dinhtta-tasktracker-awan-2-01-0.awan.comp.nus.edu.sg.out
+Running Wordcount
+Running Grep
+Running Terasort
+Running aggregate
+Running Pagerank
+Runnign KMeans
+DONE

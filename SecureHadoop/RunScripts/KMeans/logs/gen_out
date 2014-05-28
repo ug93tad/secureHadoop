@@ -1,0 +1,6 @@
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+OPTIONS = -sampleDir /HiBench/KMeans/Input/samples -clusterDir /HiBench/KMeans/Input/cluster -numClusters 4 -numSamples 40 -samplesPerFile 10 -sampleDimension 10
+Testing, testing ...
+Generating Mahout KMeans Input Dataset, and HELLO WORLD ****

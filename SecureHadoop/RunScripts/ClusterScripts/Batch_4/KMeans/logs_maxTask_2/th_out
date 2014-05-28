@@ -1,0 +1,26 @@
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Deleted hdfs://awan-2-00-0:17000/HiBench/KMeans/EncryptedInput/samples
+Deleted hdfs://awan-2-00-0:17000/HiBench/KMeans/EncryptedInput/cluster/part-00000
+OPTIONS = ../../lib/datatools.jar org.apache.mahout.clustering.kmeans.KMeansDataEncryptor -files ../../c++/libhryto.so -D mapred.child.env=LD_LIBRARY_PATH=/home/dinhtta/local/lib:/home/dinhtta/local/lib64:/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib -libjars ../../lib/mahout-core-0.7.jar,../../lib/mahout-math-0.7.jar,../../lib/secureHadoop.jar /HiBench/KMeans/Input/samples /HiBench/KMeans/EncryptedInput/samples /HiBench/KMeans/Input/cluster/part-00000 /HiBench/KMeans/EncryptedInput/cluster/part-00000
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Deleted hdfs://awan-2-00-0:17000/HiBench/KMeans/EncryptedOutput
+OPTION = -i /HiBench/KMeans/EncryptedInput/samples -c /HiBench/KMeans/EncryptedInput/cluster -o /HiBench/KMeans/EncryptedOutput -x 1 -ow -cl -cd 0.5 -dm org.apache.mahout.common.distance.encrypt.EncryptedSquaredEuclideanDistanceMeasure -xm mapreduce
+Cluster Iterator running iteration 1 over priorPath: /HiBench/KMeans/EncryptedOutput/clusters-0
+Iteration 1
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Deleted hdfs://awan-2-00-0:17000/clusters_decrypt_th
+Cluster 0 error = 2.1672502961958078E8, average = 303111.9295378752
+Cluster 1 error = 0.0, average = NaN
+Cluster 2 error = 2.047369627878788E7, average = 124083.00775022959
+Cluster 3 error = 3.956930885969389E7, average = 100942.11443799462
+Cluster 4 error = 8575163.102272727, average = 97445.03525309917
+Cluster 5 error = 3.5730942625000113E8, average = 278278.36935358343
+Cluster 6 error = 1.0181357933420701E8, average = 133438.505025173
+Cluster 7 error = 1.592416262091062E8, average = 268535.625985002
+Total error = 9.037078296536497E8 average = NaN

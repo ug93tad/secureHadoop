@@ -1,0 +1,11 @@
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Deleted hdfs://localhost/HiBench/KMeans/EncryptedInput/samples
+Deleted hdfs://localhost/HiBench/KMeans/EncryptedInput/cluster/part-00000
+OPTIONS = ../../lib/datatools.jar org.apache.mahout.clustering.kmeans.KMeansDataEncryptor -files ../../c++/libhryto.so -D mapred.child.env=LD_LIBRARY_PATH=/home/dinhtta/local/lib:/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib -libjars ../../lib/mahout-core-0.7.jar,../../lib/mahout-math-0.7.jar,../../lib/secureHadoop.jar /HiBench/KMeans/Input/samples /HiBench/KMeans/EncryptedInput/samples /HiBench/KMeans/Input/cluster/part-00000 /HiBench/KMeans/EncryptedInput/cluster/part-00000
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Deleted hdfs://localhost/HiBench/KMeans/EncryptedOutput
+OPTION = -i /HiBench/KMeans/EncryptedInput/samples -c /HiBench/KMeans/EncryptedInput/cluster -o /HiBench/KMeans/EncryptedOutput -x 3 -ow -cl -cd 0.5 -dm org.apache.mahout.common.distance.encrypt.EncryptedSquaredEuclideanDistanceMeasure -xm mapreduce

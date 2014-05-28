@@ -1,0 +1,21 @@
+#!/bin/bash
+cd ~/SecureHadoop/secureHadoop/SecureHadoop
+ant jar
+cp lib/secureHadoop.jar ~/.m2/repository/tds/secureHadoop/1.0/secureHadoop-1.0.jar
+
+cd ~/Research/HiBench/common/autogen
+ant
+cp dist/datatools.jar ~/SecureHadoop/secureHadoop/SecureHadoop/lib
+
+cd ~/Research/HiBench/common/mahout-distribution-0.7/core
+mvn install -P hadoop-0.22.0
+cp target/mahout-core-0.7.jar ~/SecureHadoop/secureHadoop/SecureHadoop/lib
+
+cd ~/Research/HiBench/common/mahout-distribution-0.7/math
+mvn install -P hadoop-0.22.0
+cp target/mahout-math-0.7.jar ~/SecureHadoop/secureHadoop/SecureHadoop/lib
+
+cd ~/Research/HiBench/common/mahout-distribution-0.7/examples
+mvn install -P hadoop-0.22.0
+cp target/mahout-examples-0.7-job.jar ~/SecureHadoop/secureHadoop/SecureHadoop/lib
+

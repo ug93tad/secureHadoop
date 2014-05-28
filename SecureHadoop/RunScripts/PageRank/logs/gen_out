@@ -1,0 +1,20 @@
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Deleted hdfs://localhost/HiBench/Pagerank
+========== preparing pagerank data ==========
+Unknown pagerank data arguments -- !!!
+
+generate -t hive -p <pages> -v <visits> [-b <base path>] [-n <data name>] [-m <num maps>] [-r <num reduces>] [-o sequence] [-c <codec>] [-d <delimiter>]
+generate -t pagerank -p <pages> [-b <base path>] [-n <data name>] [-m <num maps>] [-r <num reduces>] [-o sequence] [-c <codec>]
+generate -t nutch -p <pages> [-w <words>] [-b <base path>] [-n <data name>] [-m <num maps>] [-r <num reduces>] [-o sequence] [-c <codec>]
+generate -t bayes -p <pages> [-w <words>] -g <num classes>[-b <base path>] [-n <data name>] [-m <num maps>] [-r <num reduces>] [-o sequence] [-c <codec>]
+curIndex: 20, total: 21
+Deleted hdfs://localhost/HiBench/Pagerank/Input/edges/_SUCCESS
+Deleted hdfs://localhost/HiBench/Pagerank/Input/vertices/_SUCCESS
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+ARGUMENTS = ../../lib/secureHadoop.jar tds.encode.examples.PagerankGenerator 100 /HiBench/Pagerank/Input/edges_original /HiBench/Pagerank/Input/edges /HiBench/Pagerank/Input/pr_vector /HiBench/Pagerank/Input/pref_vector
+.........
+.........

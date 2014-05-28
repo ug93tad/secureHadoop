@@ -1,0 +1,11 @@
+<configuration>
+<property>
+	<name>mapreduce.randomtextwriter.totalbytes</name>
+	<value>134217728</value>
+</property>
+
+<property>
+	<name>mapreduce.randomtextwriter.bytespermap</name>
+	<value>67108864</value>
+</property>
+</configuration>

@@ -1,0 +1,23 @@
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+OPTIONS = ../../lib/datatools.jar org.apache.mahout.clustering.kmeans.KMeansDataEncryptor -files ../../c++/libhryto.so -D mapred.child.env=LD_LIBRARY_PATH=/home/dinhtta/local/lib:/home/dinhtta/local/lib64:/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib -libjars ../../lib/mahout-core-0.7.jar,../../lib/mahout-math-0.7.jar,../../lib/secureHadoop.jar /HiBench/KMeans/Input/samples /HiBench/KMeans/EncryptedInput/samples /HiBench/KMeans/Input/cluster/part-00000 /HiBench/KMeans/EncryptedInput/cluster/part-00000
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+OPTION = -i /HiBench/KMeans/EncryptedInput/samples -c /HiBench/KMeans/EncryptedInput/cluster -o /HiBench/KMeans/EncryptedOutput -x 1 -ow -cl -cd 0.5 -dm org.apache.mahout.common.distance.encrypt.EncryptedSquaredEuclideanDistanceMeasure -xm mapreduce
+Cluster Iterator running iteration 1 over priorPath: /HiBench/KMeans/EncryptedOutput/clusters-0
+Iteration 1
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Deleted hdfs://awan-2-00-0:17000/clusters_decrypt
+Cluster 0 error = 2.2457286169945356E8, average = 306793.5269118218
+Cluster 1 error = 0.0, average = NaN
+Cluster 2 error = 2.074392217964072E7, average = 124215.10287210013
+Cluster 3 error = 3.890523282687339E7, average = 100530.31738210178
+Cluster 4 error = 5066450.755555555, average = 112587.79456790123
+Cluster 5 error = 3.868834654670658E8, average = 289583.4322358277
+Cluster 6 error = 1.1443305520958072E8, average = 137045.57510129426
+Cluster 7 error = 1.2827175480923702E8, average = 257573.80483782533
+Total error = 9.188767429474068E8 average = NaN

@@ -1,0 +1,12 @@
+2014-05-02 20:15:37,670 INFO org.apache.hadoop.util.NativeCodeLoader: Loaded the native-hadoop library
+2014-05-02 20:15:37,897 INFO org.apache.hadoop.mapred.TaskRunner: Creating symlink: /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/distcache/-4445793440740328304/localhost/home/dinhtta/Hadoop/tmp/mapred/staging/dinhtta/.staging/job_201404281052_0837/files/libhryto.so <- /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0837/attempt_201404281052_0837_m_000001_0/work/./libhryto.so
+2014-05-02 20:15:37,907 INFO org.apache.hadoop.mapreduce.filecache.TrackerDistributedCacheManager: Creating symlink: /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0837/jars/.job.jar.crc <- /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0837/attempt_201404281052_0837_m_000001_0/work/./.job.jar.crc
+2014-05-02 20:15:37,913 INFO org.apache.hadoop.mapreduce.filecache.TrackerDistributedCacheManager: Creating symlink: /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0837/jars/job.jar <- /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0837/attempt_201404281052_0837_m_000001_0/work/./job.jar
+2014-05-02 20:15:37,919 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=MAP, sessionId=
+2014-05-02 20:15:37,919 WARN org.apache.hadoop.conf.Configuration: user.name is deprecated. Instead, use mapreduce.job.user.name
+2014-05-02 20:15:38,068 INFO org.apache.hadoop.mapreduce.util.ProcessTree: setsid exited with exit code 0
+2014-05-02 20:15:38,082 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.mapreduce.util.LinuxResourceCalculatorPlugin@7529ecb1
+2014-05-02 20:15:38,347 INFO org.apache.hadoop.mapred.Task: Task:attempt_201404281052_0837_m_000001_0 is done. And is in the process of commiting
+2014-05-02 20:15:41,422 INFO org.apache.hadoop.mapred.Task: Task attempt_201404281052_0837_m_000001_0 is allowed to commit now
+2014-05-02 20:15:41,469 INFO org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_201404281052_0837_m_000001_0' to /clusters_decrypt_th
+2014-05-02 20:15:46,358 INFO org.apache.hadoop.mapred.Task: Task 'attempt_201404281052_0837_m_000001_0' done.

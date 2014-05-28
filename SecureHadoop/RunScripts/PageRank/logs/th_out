@@ -1,0 +1,47 @@
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Deleted hdfs://localhost/HiBench/Pagerank/Input/pr_vector_encrypt
+Deleted hdfs://localhost/HiBench/Pagerank/Input/pref_vector_encrypt
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+[PEGASUS] Computing PageRank. Max iteration = 5
+
+Stage 1: 
+Counter RND : 100
+Stage 2: 
+Counter RND : 4109
+Iteration = 1
+Stage 1: 
+Counter RND : 100
+Stage 2: 
+Counter RND : 4109
+Iteration = 2
+Stage 1: 
+Counter RND : 100
+Stage 2: 
+Counter RND : 4109
+Iteration = 3
+Stage 1: 
+Counter RND : 100
+Stage 2: 
+Counter RND : 4109
+Iteration = 4
+Stage 1: 
+Counter RND : 100
+Stage 2: 
+Counter RND : 4109
+Iteration = 5
+top 5
+tau = 0, normalized tau = 0.0
+top 10
+tau = 1, normalized tau = 0.022222222222222223
+top 20
+tau = 1, normalized tau = 0.005263157894736842
+5 PERCENT
+tau = 0, normalized tau = 0.0
+10 PERCENT
+tau = 1, normalized tau = 0.022222222222222223
+ALL PAGES
+tau = 87, normalized tau = 0.017575757575757574

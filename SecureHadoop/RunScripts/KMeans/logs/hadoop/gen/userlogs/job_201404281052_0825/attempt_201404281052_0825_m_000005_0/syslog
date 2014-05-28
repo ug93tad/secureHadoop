@@ -1,0 +1,7 @@
+2014-05-02 20:06:41,821 INFO org.apache.hadoop.util.NativeCodeLoader: Loaded the native-hadoop library
+2014-05-02 20:06:42,046 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=MAP, sessionId=
+2014-05-02 20:06:42,046 WARN org.apache.hadoop.conf.Configuration: user.name is deprecated. Instead, use mapreduce.job.user.name
+2014-05-02 20:06:42,195 INFO org.apache.hadoop.mapreduce.util.ProcessTree: setsid exited with exit code 0
+2014-05-02 20:06:42,225 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.mapreduce.util.LinuxResourceCalculatorPlugin@6252b5f7
+2014-05-02 20:06:42,314 INFO org.apache.hadoop.mapred.Task: Task:attempt_201404281052_0825_m_000005_0 is done. And is in the process of commiting
+2014-05-02 20:06:42,381 INFO org.apache.hadoop.mapred.Task: Task 'attempt_201404281052_0825_m_000005_0' done.

@@ -1,0 +1,43 @@
+<configuration>
+	<property>
+		<name>crypto.hom</name>
+		<value>false</value>
+	</property>
+        <property>
+                <name>key</name>
+                <value>hello world ande</value>
+        </property>
+        <property>
+                <name>iv</name>
+                <value>dontusethisinput</value>
+        </property>
+	<property>
+		<name>paillier.pub.key</name>
+		<value>/home/dinhtta/paillier.pub</value>
+	</property>
+	<property>
+		<name>paillier.priv.key</name>
+		<value>/home/dinhtta/paillier.priv</value>
+	</property>
+	<property>
+		<name>elgamal.pub.key</name>
+		<value>/home/dinhtta/elgamal.pub</value>
+	</property>
+	<property>
+		<name>elgamal.priv.key</name>
+		<value>/home/dinhtta/elgamal.priv</value>
+	</property>
+	<property>
+		<name>ope.plaintext.length</name>
+		<value>10</value>
+	</property>
+	<property>
+		<name>ope.ciphertext.length</name>
+		<value>20</value>
+	</property>
+	<property>
+		<name>kmeans.nSamples</name>
+		<value>400</value>
+	</property>
+</configuration>
+

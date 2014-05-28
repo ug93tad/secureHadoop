@@ -1,0 +1,71 @@
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+[PEGASUS] Computing PageRank. Max iteration = 7
+
+Stage 1: 
+Counter SWITCH : 0
+Counter SWITCH_TO_ELG : 0
+Counter SWITCH_TO_PAL : 0
+Stage 2: 
+Counter SWITCH : 300
+Counter SWITCH_TO_ELG : 100
+Counter SWITCH_TO_PAL : 200
+Iteration = 1
+Stage 1: 
+Counter SWITCH : 0
+Counter SWITCH_TO_ELG : 0
+Counter SWITCH_TO_PAL : 0
+Stage 2: 
+Counter SWITCH : 300
+Counter SWITCH_TO_ELG : 100
+Counter SWITCH_TO_PAL : 200
+Iteration = 2
+Stage 1: 
+Counter SWITCH : 0
+Counter SWITCH_TO_ELG : 0
+Counter SWITCH_TO_PAL : 0
+Stage 2: 
+Counter SWITCH : 300
+Counter SWITCH_TO_ELG : 100
+Counter SWITCH_TO_PAL : 200
+Iteration = 3
+Stage 1: 
+Counter SWITCH : 0
+Counter SWITCH_TO_ELG : 0
+Counter SWITCH_TO_PAL : 0
+Stage 2: 
+Counter SWITCH : 300
+Counter SWITCH_TO_ELG : 100
+Counter SWITCH_TO_PAL : 200
+Iteration = 4
+Stage 1: 
+Counter SWITCH : 0
+Counter SWITCH_TO_ELG : 0
+Counter SWITCH_TO_PAL : 0
+Stage 2: 
+Counter SWITCH : 300
+Counter SWITCH_TO_ELG : 100
+Counter SWITCH_TO_PAL : 200
+Iteration = 5
+Stage 1: 
+Counter SWITCH : 0
+Counter SWITCH_TO_ELG : 0
+Counter SWITCH_TO_PAL : 0
+Stage 2: 
+Counter SWITCH : 300
+Counter SWITCH_TO_ELG : 100
+Counter SWITCH_TO_PAL : 200
+Iteration = 6
+Stage 1: 
+Counter SWITCH : 0
+Counter SWITCH_TO_ELG : 0
+Counter SWITCH_TO_PAL : 0
+Stage 2: 
+Counter SWITCH : 300
+Counter SWITCH_TO_ELG : 100
+Counter SWITCH_TO_PAL : 200
+Iteration = 7

@@ -1,0 +1,110 @@
+14/05/02 17:14:35 INFO HiBench.PagerankData: Generating pageRank data files...
+14/05/02 17:14:35 INFO HiBench.PagerankData: Initializing PageRank data generator...
+14/05/02 17:14:36 INFO HiBench.Dummy: Creating dummy file /HiBench/Pagerank/temp/dummy with 1 slots...
+14/05/02 17:14:36 INFO HiBench.PagerankData: Creating PageRank nodes...
+14/05/02 17:14:36 INFO HiBench.PagerankData: Running Job: Create pagerank nodes
+14/05/02 17:14:36 INFO HiBench.PagerankData: Dummy file /HiBench/Pagerank/temp/dummy as input
+14/05/02 17:14:36 INFO HiBench.PagerankData: Vertices file /HiBench/Pagerank/Input/vertices as output
+14/05/02 17:14:37 WARN mapreduce.JobSubmitter: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+14/05/02 17:14:37 INFO mapred.FileInputFormat: Total input paths to process : 1
+14/05/02 17:14:37 INFO mapreduce.JobSubmitter: number of splits:1
+14/05/02 17:14:37 INFO mapreduce.Job: Running job: job_201404281052_0753
+14/05/02 17:14:38 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/02 17:14:49 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/02 17:14:51 INFO mapreduce.Job: Job complete: job_201404281052_0753
+14/05/02 17:14:51 INFO mapreduce.Job: Counters: 18
+	FileInputFormatCounters
+		BYTES_READ=2
+	FileSystemCounters
+		HDFS_BYTES_READ=98
+		HDFS_BYTES_WRITTEN=580
+	Job Counters 
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=5621
+		SLOTS_MILLIS_REDUCES=0
+		Launched map tasks=1
+	Map-Reduce Framework
+		CPU_MILLISECONDS=260
+		Failed Shuffles=0
+		GC time elapsed (ms)=5
+		Map input records=1
+		Map output records=100
+		Merged Map outputs=0
+		PHYSICAL_MEMORY_BYTES=79544320
+		Spilled Records=0
+		SPLIT_RAW_BYTES=96
+		VIRTUAL_MEMORY_BYTES=1506185216
+14/05/02 17:14:51 INFO HiBench.PagerankData: Finished Running Job: Create pagerank nodes
+14/05/02 17:14:51 INFO HiBench.PagerankData: Cleaning temp files...
+14/05/02 17:14:51 INFO HiBench.PagerankData: Creating PageRank links
+14/05/02 17:14:51 INFO HiBench.PagerankData: Running Job: Create pagerank links
+14/05/02 17:14:51 INFO HiBench.PagerankData: Dummy file /HiBench/Pagerank/temp/dummy as input
+14/05/02 17:14:51 INFO HiBench.PagerankData: Edges file /HiBench/Pagerank/Input/edges as output
+14/05/02 17:14:51 WARN mapreduce.JobSubmitter: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+14/05/02 17:14:51 INFO mapred.FileInputFormat: Total input paths to process : 1
+14/05/02 17:14:51 INFO mapreduce.JobSubmitter: number of splits:1
+14/05/02 17:14:51 INFO mapreduce.Job: Running job: job_201404281052_0754
+14/05/02 17:14:52 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/02 17:15:04 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/02 17:15:06 INFO mapreduce.Job: Job complete: job_201404281052_0754
+14/05/02 17:15:06 INFO mapreduce.Job: Counters: 18
+	FileInputFormatCounters
+		BYTES_READ=2
+	FileSystemCounters
+		HDFS_BYTES_READ=98
+		HDFS_BYTES_WRITTEN=33351
+	Job Counters 
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=5534
+		SLOTS_MILLIS_REDUCES=0
+		Launched map tasks=1
+	Map-Reduce Framework
+		CPU_MILLISECONDS=370
+		Failed Shuffles=0
+		GC time elapsed (ms)=10
+		Map input records=1
+		Map output records=3909
+		Merged Map outputs=0
+		PHYSICAL_MEMORY_BYTES=81006592
+		Spilled Records=0
+		SPLIT_RAW_BYTES=96
+		VIRTUAL_MEMORY_BYTES=1499672576
+14/05/02 17:15:06 INFO HiBench.PagerankData: Finished Running Job: Create pagerank links
+14/05/02 17:15:06 INFO HiBench.PagerankData: Cleaning temp files...
+14/05/02 17:15:06 INFO HiBench.PagerankData: Closing pagerank data generator...
+14/05/02 17:15:10 WARN mapreduce.JobSubmitter: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+14/05/02 17:15:10 INFO input.FileInputFormat: Total input paths to process : 1
+14/05/02 17:15:11 INFO mapreduce.JobSubmitter: number of splits:1
+14/05/02 17:15:11 INFO mapreduce.Job: Running job: job_201404281052_0755
+14/05/02 17:15:12 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/02 17:15:23 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/02 17:15:25 INFO mapreduce.Job: Job complete: job_201404281052_0755
+14/05/02 17:15:25 INFO mapreduce.Job: Counters: 19
+	FileInputFormatCounters
+		BYTES_READ=33351
+	FileSystemCounters
+		HDFS_BYTES_READ=33481
+		HDFS_BYTES_WRITTEN=271354
+	Job Counters 
+		Data-local map tasks=1
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=5592
+		SLOTS_MILLIS_REDUCES=0
+		Launched map tasks=1
+	Map-Reduce Framework
+		CPU_MILLISECONDS=970
+		Failed Shuffles=0
+		GC time elapsed (ms)=11
+		Map input records=3909
+		Map output records=3909
+		Merged Map outputs=0
+		PHYSICAL_MEMORY_BYTES=79822848
+		Spilled Records=0
+		SPLIT_RAW_BYTES=130
+		VIRTUAL_MEMORY_BYTES=1503080448
+14/05/02 17:15:25 INFO util.NativeCodeLoader: Loaded the native-hadoop library
+14/05/02 17:15:25 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+14/05/02 17:15:25 INFO compress.CodecPool: Got brand-new compressor [.deflate]

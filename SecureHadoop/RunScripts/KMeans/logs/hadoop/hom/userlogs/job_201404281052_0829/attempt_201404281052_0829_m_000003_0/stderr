@@ -1,0 +1,4 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/dinhtta/Hadoop/hadoop-0.22.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/distcache/7900873432126915996/localhost/home/dinhtta/Hadoop/tmp/mapred/staging/dinhtta/.staging/job_201404281052_0829/libjars/mahout-examples-0.7-job.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.

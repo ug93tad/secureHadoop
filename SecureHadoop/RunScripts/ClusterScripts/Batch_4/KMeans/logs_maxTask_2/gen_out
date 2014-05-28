@@ -1,0 +1,9 @@
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+Deleted hdfs://awan-2-00-0:17000/HiBench/KMeans/Input
+Deleted hdfs://awan-2-00-0:17000/HiBench/KMeans/EncryptedInput
+Deleted hdfs://awan-2-00-0:17000/HiBench/KMeans/EncryptedOutput
+OPTIONS = -sampleDir /HiBench/KMeans/Input/samples -clusterDir /HiBench/KMeans/Input/cluster -numClusters 8 -numSamples 4000 -samplesPerFile 500 -sampleDimension 8
+Testing, testing ...
+Generating Mahout KMeans Input Dataset, and HELLO WORLD ****

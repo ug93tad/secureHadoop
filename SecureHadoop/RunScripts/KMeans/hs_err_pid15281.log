@@ -1,0 +1,683 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f03fb4a792e, pid=15281, tid=139655089731328
+#
+# JRE version: 7.0_25-b15
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23.25-b01 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libc.so.6+0x6f92e]  fread+0x2e
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f03f400c000):  JavaThread "main" [_thread_in_native, id=15311, stack(0x00007f03fbf3b000,0x00007f03fc03c000)]
+
+siginfo:si_signo=SIGSEGV: si_errno=0, si_code=1 (SEGV_MAPERR), si_addr=0x0000000000000000
+
+Registers:
+RAX=0x00007f03fc039e5c, RBX=0x0000000000000001, RCX=0x0000000000000000, RDX=0x0000000000000001
+RSP=0x00007f03fc039e10, RBP=0x00007f03fc039ec0, RSI=0x0000000000000004, RDI=0x00007f03fc039e5c
+R8 =0x0000000000000000, R9 =0x00007f03e835ec99, R10=0x00007f03fc039be0, R11=0x00007f03fb4a7900
+R12=0x0000000000000004, R13=0x0000000000000004, R14=0x00007f03fc039f90, R15=0x00007f03f400c000
+RIP=0x00007f03fb4a792e, EFLAGS=0x0000000000010202, CSGSFS=0x0000000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007f03fc039e10)
+0x00007f03fc039e10:   00007f03fc039e5c 00000000bce36c80
+0x00007f03fc039e20:   00007f03fc039ec0 0000000000000000
+0x00007f03fc039e30:   00000000bce36c80 00007f03e835ccf1
+0x00007f03fc039e40:   00007f03f45d8600 00007f03e8563e60
+0x00007f03fc039e50:   00007f03f400c000 00007f03e834a010
+0x00007f03fc039e60:   00000000bce36c80 00007f03fc039f00
+0x00007f03fc039e70:   0000000000000000 00007f03fbe4d725
+0x00007f03fc039e80:   00007f03e8563e60 0000000000000061
+0x00007f03fc039e90:   0000000000000000 00007f03f45d8600
+0x00007f03fc039ea0:   00007f03e8563e60 0000000000000062
+0x00007f03fc039eb0:   00007f03f45d8619 00000000bce36c80
+0x00007f03fc039ec0:   00007f03fc039f00 00007f03e835d31b
+0x00007f03fc039ed0:   00000000bce36c80 00007f03fc039f88
+0x00007f03fc039ee0:   00007f03fc039f90 00007f03f400c1d8
+0x00007f03fc039ef0:   00007f03fc039f68 00007f03f45d8600
+0x00007f03fc039f00:   00007f03fc039f68 00007f03f1011f90
+0x00007f03fc039f10:   00007f03f400cb98 00007f03f101dd50
+0x00007f03fc039f20:   00007f03f400c000 00007f03fc039f28
+0x00007f03fc039f30:   00000000bce36c80 00007f03fc039f90
+0x00007f03fc039f40:   00000000bce38270 0000000000000000
+0x00007f03fc039f50:   00000000bce36c80 0000000000000000
+0x00007f03fc039f60:   00007f03fc039f88 00007f03fc039fd8
+0x00007f03fc039f70:   00007f03f1006158 0000000000000000
+0x00007f03fc039f80:   00007f03f100edd8 00000000eb3f5dd0
+0x00007f03fc039f90:   00000000eb49ac78 00007f03fc039f98
+0x00007f03fc039fa0:   00000000bce372ab 00007f03fc039ff0
+0x00007f03fc039fb0:   00000000bce38270 0000000000000000
+0x00007f03fc039fc0:   00000000bce372b0 00007f03fc039f88
+0x00007f03fc039fd0:   00007f03fc039fe8 00007f03fc03a038
+0x00007f03fc039fe0:   00007f03f1006806 00000000eb4a2078
+0x00007f03fc039ff0:   00000000eb49ac78 00007f03fc039ff8
+0x00007f03fc03a000:   00000000bcc4ba8c 00007f03fc03a088 
+
+Instructions: (pc=0x00007f03fb4a792e)
+0x00007f03fb4a790e:   0f af e6 4c 89 6c 24 f8 48 89 6c 24 e8 48 83 ec
+0x00007f03fb4a791e:   28 49 89 f5 48 89 d3 4d 85 e4 0f 84 d2 00 00 00
+0x00007f03fb4a792e:   8b 01 49 89 f8 48 89 cd 25 00 80 00 00 75 48 48
+0x00007f03fb4a793e:   8b 91 88 00 00 00 64 4c 8b 0c 25 10 00 00 00 4c 
+
+Register to memory mapping:
+
+RAX=0x00007f03fc039e5c is pointing into the stack for thread: 0x00007f03f400c000
+RBX=0x0000000000000001 is an unknown value
+RCX=0x0000000000000000 is an unknown value
+RDX=0x0000000000000001 is an unknown value
+RSP=0x00007f03fc039e10 is pointing into the stack for thread: 0x00007f03f400c000
+RBP=0x00007f03fc039ec0 is pointing into the stack for thread: 0x00007f03f400c000
+RSI=0x0000000000000004 is an unknown value
+RDI=0x00007f03fc039e5c is pointing into the stack for thread: 0x00007f03f400c000
+R8 =0x0000000000000000 is an unknown value
+R9 =0x00007f03e835ec99: <offset 0x16c99> in /home/dinhtta/Hadoop/hadoop-0.22.0/lib/native/Linux-amd64-64/libhryto.so at 0x00007f03e8348000
+R10=0x00007f03fc039be0 is pointing into the stack for thread: 0x00007f03f400c000
+R11=0x00007f03fb4a7900: fread+0 in /lib/x86_64-linux-gnu/libc.so.6 at 0x00007f03fb438000
+R12=0x0000000000000004 is an unknown value
+R13=0x0000000000000004 is an unknown value
+R14=0x00007f03fc039f90 is pointing into the stack for thread: 0x00007f03f400c000
+R15=0x00007f03f400c000 is a thread
+
+
+Stack: [0x00007f03fbf3b000,0x00007f03fc03c000],  sp=0x00007f03fc039e10,  free space=1019k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libc.so.6+0x6f92e]  fread+0x2e
+C  [libhryto.so+0x1531b]  Java_tds_hom_Elgamal_init_1public_1key+0x46
+j  tds.hom.Elgamal.init_public_key(Ljava/lang/String;)V+0
+j  tds.hom.Elgamal.initPublicParameters(Ljava/util/List;)V+19
+j  org.apache.mahout.clustering.kmeans.KMeansDataEncryptor.run([Ljava/lang/String;)I+100
+j  org.apache.hadoop.util.ToolRunner.run(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/util/Tool;[Ljava/lang/String;)I+38
+j  org.apache.hadoop.util.ToolRunner.run(Lorg/apache/hadoop/util/Tool;[Ljava/lang/String;)I+8
+j  org.apache.mahout.clustering.kmeans.KMeansDataEncryptor.main([Ljava/lang/String;)V+8
+v  ~StubRoutines::call_stub
+V  [libjvm.so+0x54dd35]  JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)+0x355
+V  [libjvm.so+0x54c858]  JavaCalls::call(JavaValue*, methodHandle, JavaCallArguments*, Thread*)+0x28
+V  [libjvm.so+0x7ae765]  Reflection::invoke(instanceKlassHandle, methodHandle, Handle, bool, objArrayHandle, BasicType, objArrayHandle, bool, Thread*)+0x455
+V  [libjvm.so+0x7af4f0]  Reflection::invoke_method(oopDesc*, Handle, objArrayHandle, Thread*)+0x160
+V  [libjvm.so+0x5a5923]  JVM_InvokeMethod+0x1e3
+j  sun.reflect.NativeMethodAccessorImpl.invoke0(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+0
+j  sun.reflect.NativeMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+87
+j  sun.reflect.DelegatingMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+6
+j  java.lang.reflect.Method.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+57
+j  org.apache.hadoop.util.RunJar.main([Ljava/lang/String;)V+504
+v  ~StubRoutines::call_stub
+V  [libjvm.so+0x54dd35]  JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)+0x355
+V  [libjvm.so+0x54c858]  JavaCalls::call(JavaValue*, methodHandle, JavaCallArguments*, Thread*)+0x28
+V  [libjvm.so+0x560cca]  jni_invoke_static(JNIEnv_*, JavaValue*, _jobject*, JNICallType, _jmethodID*, JNI_ArgumentPusher*, Thread*)+0x20a
+V  [libjvm.so+0x56d112]  jni_CallStaticVoidMethod+0x162
+C  [libjli.so+0x36d9]  JavaMain+0x7e9
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  tds.hom.Elgamal.init_public_key(Ljava/lang/String;)V+0
+j  tds.hom.Elgamal.initPublicParameters(Ljava/util/List;)V+19
+j  org.apache.mahout.clustering.kmeans.KMeansDataEncryptor.run([Ljava/lang/String;)I+100
+j  org.apache.hadoop.util.ToolRunner.run(Lorg/apache/hadoop/conf/Configuration;Lorg/apache/hadoop/util/Tool;[Ljava/lang/String;)I+38
+j  org.apache.hadoop.util.ToolRunner.run(Lorg/apache/hadoop/util/Tool;[Ljava/lang/String;)I+8
+j  org.apache.mahout.clustering.kmeans.KMeansDataEncryptor.main([Ljava/lang/String;)V+8
+v  ~StubRoutines::call_stub
+j  sun.reflect.NativeMethodAccessorImpl.invoke0(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+0
+j  sun.reflect.NativeMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+87
+j  sun.reflect.DelegatingMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+6
+j  java.lang.reflect.Method.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+57
+j  org.apache.hadoop.util.RunJar.main([Ljava/lang/String;)V+504
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007f03f40f4800 JavaThread "Service Thread" daemon [_thread_blocked, id=15327, stack(0x00007f03e9149000,0x00007f03e924a000)]
+  0x00007f03f40f2800 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=15326, stack(0x00007f03e924a000,0x00007f03e934b000)]
+  0x00007f03f40ef800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=15325, stack(0x00007f03e934b000,0x00007f03e944c000)]
+  0x00007f03f40ed000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=15324, stack(0x00007f03e944c000,0x00007f03e954d000)]
+  0x00007f03f409f800 JavaThread "Finalizer" daemon [_thread_blocked, id=15322, stack(0x00007f03e9c2e000,0x00007f03e9d2f000)]
+  0x00007f03f409d000 JavaThread "Reference Handler" daemon [_thread_blocked, id=15321, stack(0x00007f03e9d2f000,0x00007f03e9e30000)]
+=>0x00007f03f400c000 JavaThread "main" [_thread_in_native, id=15311, stack(0x00007f03fbf3b000,0x00007f03fc03c000)]
+
+Other Threads:
+  0x00007f03f4095800 VMThread [stack: 0x00007f03f004c000,0x00007f03f014d000] [id=15320]
+  0x00007f03f40ff800 WatcherThread [stack: 0x00007f03e9048000,0x00007f03e9149000] [id=15328]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 17856K, used 4499K [0x00000000eb2b0000, 0x00000000ec690000, 0x0000000100000000)
+  eden space 15360K, 13% used [0x00000000eb2b0000,0x00000000eb4a80c0,0x00000000ec1b0000)
+  from space 2496K, 99% used [0x00000000ec1b0000,0x00000000ec41ccb8,0x00000000ec420000)
+  to   space 2496K, 0% used [0x00000000ec420000,0x00000000ec420000,0x00000000ec690000)
+ ParOldGen       total 40768K, used 638K [0x00000000c1800000, 0x00000000c3fd0000, 0x00000000eb2b0000)
+  object space 40768K, 1% used [0x00000000c1800000,0x00000000c189f9d0,0x00000000c3fd0000)
+ PSPermGen       total 21248K, used 8424K [0x00000000bc600000, 0x00000000bdac0000, 0x00000000c1800000)
+  object space 21248K, 39% used [0x00000000bc600000,0x00000000bce3a208,0x00000000bdac0000)
+
+Card table byte_map: [0x00007f03f915d000,0x00007f03f937b000] byte_map_base: 0x00007f03f8b7a000
+
+Polling page: 0x00007f03fc057000
+
+Code Cache  [0x00007f03f1000000, 0x00007f03f1270000, 0x00007f03f4000000)
+ total_blobs=335 nmethods=74 adapters=213 free_code_cache=48518Kb largest_free_block=49641536
+
+Compilation events (10 events):
+Event: 0.701 Thread 0x00007f03f40ef800 nmethod 66 0x00007f03f1093750 code [0x00007f03f1093880, 0x00007f03f1093918]
+Event: 0.701 Thread 0x00007f03f40ef800   67             com.sun.org.apache.xerces.internal.impl.XMLEntityScanner::scanData (1050 bytes)
+Event: 0.734 Thread 0x00007f03f40ef800 nmethod 67 0x00007f03f1098590 code [0x00007f03f1098800, 0x00007f03f1099bb0]
+Event: 0.734 Thread 0x00007f03f40ef800   68             com.sun.org.apache.xerces.internal.dom.DeferredDocumentImpl::clearChunkIndex (57 bytes)
+Event: 0.735 Thread 0x00007f03f40ef800 nmethod 68 0x00007f03f1092c90 code [0x00007f03f1092de0, 0x00007f03f1092ef8]
+Event: 0.735 Thread 0x00007f03f40ef800   69             com.sun.org.apache.xerces.internal.dom.DeferredDocumentImpl::synchronizeChildren (127 bytes)
+Event: 0.742 Thread 0x00007f03f40ef800 nmethod 69 0x00007f03f109aad0 code [0x00007f03f109ac80, 0x00007f03f109b2b8]
+Event: 0.742 Thread 0x00007f03f40ef800   70             java.lang.String::indexOf (7 bytes)
+Event: 0.744 Thread 0x00007f03f40ef800 nmethod 70 0x00007f03f1076450 code [0x00007f03f10765a0, 0x00007f03f1076708]
+Event: 0.775 Thread 0x00007f03f40f2800 nmethod 55 0x00007f03f10a0290 code [0x00007f03f10a0de0, 0x00007f03f10a4960]
+
+GC Heap History (2 events):
+Event: 0.670 GC heap before
+{Heap before GC invocations=1 (full 0):
+ PSYoungGen      total 17856K, used 15360K [0x00000000eb2b0000, 0x00000000ec690000, 0x0000000100000000)
+  eden space 15360K, 100% used [0x00000000eb2b0000,0x00000000ec1b0000,0x00000000ec1b0000)
+  from space 2496K, 0% used [0x00000000ec420000,0x00000000ec420000,0x00000000ec690000)
+  to   space 2496K, 0% used [0x00000000ec1b0000,0x00000000ec1b0000,0x00000000ec420000)
+ ParOldGen       total 40768K, used 0K [0x00000000c1800000, 0x00000000c3fd0000, 0x00000000eb2b0000)
+  object space 40768K, 0% used [0x00000000c1800000,0x00000000c1800000,0x00000000c3fd0000)
+ PSPermGen       total 21248K, used 8266K [0x00000000bc600000, 0x00000000bdac0000, 0x00000000c1800000)
+  object space 21248K, 38% used [0x00000000bc600000,0x00000000bce12808,0x00000000bdac0000)
+Event: 0.674 GC heap after
+Heap after GC invocations=1 (full 0):
+ PSYoungGen      total 17856K, used 2483K [0x00000000eb2b0000, 0x00000000ec690000, 0x0000000100000000)
+  eden space 15360K, 0% used [0x00000000eb2b0000,0x00000000eb2b0000,0x00000000ec1b0000)
+  from space 2496K, 99% used [0x00000000ec1b0000,0x00000000ec41ccb8,0x00000000ec420000)
+  to   space 2496K, 0% used [0x00000000ec420000,0x00000000ec420000,0x00000000ec690000)
+ ParOldGen       total 40768K, used 638K [0x00000000c1800000, 0x00000000c3fd0000, 0x00000000eb2b0000)
+  object space 40768K, 1% used [0x00000000c1800000,0x00000000c189f9d0,0x00000000c3fd0000)
+ PSPermGen       total 21248K, used 8266K [0x00000000bc600000, 0x00000000bdac0000, 0x00000000c1800000)
+  object space 21248K, 38% used [0x00000000bc600000,0x00000000bce12808,0x00000000bdac0000)
+}
+
+Deoptimization events (1 events):
+Event: 0.251 Thread 0x00007f03f400c000 Uncommon trap -12 fr.pc 0x00007f03f1066df4
+
+Internal exceptions (10 events):
+Event: 0.715 Thread 0x00007f03f400c000 Threw 0x00000000eb432ca8 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 0.715 Thread 0x00007f03f400c000 Threw 0x00000000eb436748 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 0.716 Thread 0x00007f03f400c000 Threw 0x00000000eb43b4a0 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 0.720 Thread 0x00007f03f400c000 Threw 0x00000000eb44ef70 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 0.722 Thread 0x00007f03f400c000 Threw 0x00000000eb460598 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 0.740 Thread 0x00007f03f400c000 Threw 0x00000000eb478018 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 0.742 Thread 0x00007f03f400c000 Threw 0x00000000eb47f798 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 0.743 Thread 0x00007f03f400c000 Threw 0x00000000eb4875e0 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 0.743 Thread 0x00007f03f400c000 Threw 0x00000000eb4901a0 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 0.854 Thread 0x00007f03f400c000 Threw 0x00000000eb49b028 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+
+Events (10 events):
+Event: 0.742 loading class 0x00007f03f44bca10
+Event: 0.742 loading class 0x00007f03f44bca10 done
+Event: 0.743 loading class 0x00007f03f45c4960
+Event: 0.743 loading class 0x00007f03f45c4960 done
+Event: 0.743 loading class 0x00007f03f45c3f20
+Event: 0.743 loading class 0x00007f03f45c3f20 done
+Event: 0.744 loading class 0x00007f03f4066020
+Event: 0.744 loading class 0x00007f03f4066020 done
+Event: 0.854 loading class 0x00007f03f44bd310
+Event: 0.854 loading class 0x00007f03f44bd310 done
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 08:05 4457595                            /home/dinhtta/Downloads/jdk1.7.0_25/bin/java
+00600000-00601000 rw-p 00000000 08:05 4457595                            /home/dinhtta/Downloads/jdk1.7.0_25/bin/java
+0125c000-0127d000 rw-p 00000000 00:00 0                                  [heap]
+bc600000-bdac0000 rw-p 00000000 00:00 0 
+bdac0000-c1800000 rw-p 00000000 00:00 0 
+c1800000-c3fd0000 rw-p 00000000 00:00 0 
+c3fd0000-eb2b0000 rw-p 00000000 00:00 0 
+eb2b0000-ec690000 rw-p 00000000 00:00 0 
+ec690000-100000000 rw-p 00000000 00:00 0 
+7f03e2b41000-7f03e2c7b000 rw-p 00000000 00:00 0 
+7f03e2c7b000-7f03e2ce2000 r-xp 00000000 08:05 5774645                    /usr/lib/x86_64-linux-gnu/libgmp.so.10.0.5
+7f03e2ce2000-7f03e2ee1000 ---p 00067000 08:05 5774645                    /usr/lib/x86_64-linux-gnu/libgmp.so.10.0.5
+7f03e2ee1000-7f03e2ee2000 r--p 00066000 08:05 5774645                    /usr/lib/x86_64-linux-gnu/libgmp.so.10.0.5
+7f03e2ee2000-7f03e2eea000 rw-p 00067000 08:05 5774645                    /usr/lib/x86_64-linux-gnu/libgmp.so.10.0.5
+7f03e2eea000-7f03e2f00000 r-xp 00000000 08:05 7081756                    /lib/x86_64-linux-gnu/libz.so.1.2.7
+7f03e2f00000-7f03e30ff000 ---p 00016000 08:05 7081756                    /lib/x86_64-linux-gnu/libz.so.1.2.7
+7f03e30ff000-7f03e3100000 r--p 00015000 08:05 7081756                    /lib/x86_64-linux-gnu/libz.so.1.2.7
+7f03e3100000-7f03e3101000 rw-p 00016000 08:05 7081756                    /lib/x86_64-linux-gnu/libz.so.1.2.7
+7f03e3101000-7f03e3115000 r-xp 00000000 08:05 7081628                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f03e3115000-7f03e3315000 ---p 00014000 08:05 7081628                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f03e3315000-7f03e3316000 r--p 00014000 08:05 7081628                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f03e3316000-7f03e3317000 rw-p 00015000 08:05 7081628                    /lib/x86_64-linux-gnu/libgcc_s.so.1
+7f03e3317000-7f03e33fc000 r-xp 00000000 08:05 5775079                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17
+7f03e33fc000-7f03e35fb000 ---p 000e5000 08:05 5775079                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17
+7f03e35fb000-7f03e3603000 r--p 000e4000 08:05 5775079                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17
+7f03e3603000-7f03e3605000 rw-p 000ec000 08:05 5775079                    /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.17
+7f03e3605000-7f03e361a000 rw-p 00000000 00:00 0 
+7f03e361a000-7f03e364a000 r-xp 00000000 08:05 4326269                    /home/dinhtta/local/lib/libedbutil.so
+7f03e364a000-7f03e3849000 ---p 00030000 08:05 4326269                    /home/dinhtta/local/lib/libedbutil.so
+7f03e3849000-7f03e384a000 r--p 0002f000 08:05 4326269                    /home/dinhtta/local/lib/libedbutil.so
+7f03e384a000-7f03e384c000 rw-p 00030000 08:05 4326269                    /home/dinhtta/local/lib/libedbutil.so
+7f03e384c000-7f03e3a1e000 r-xp 00000000 08:05 5782690                    /usr/lib/libntl.so.0.1.0
+7f03e3a1e000-7f03e3c1d000 ---p 001d2000 08:05 5782690                    /usr/lib/libntl.so.0.1.0
+7f03e3c1d000-7f03e3c1e000 r--p 001d1000 08:05 5782690                    /usr/lib/libntl.so.0.1.0
+7f03e3c1e000-7f03e3c23000 rw-p 001d2000 08:05 5782690                    /usr/lib/libntl.so.0.1.0
+7f03e3c23000-7f03e3c25000 rw-p 00000000 00:00 0 
+7f03e3c25000-7f03e3dd6000 r-xp 00000000 08:05 7077901                    /lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+7f03e3dd6000-7f03e3fd6000 ---p 001b1000 08:05 7077901                    /lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+7f03e3fd6000-7f03e3ff1000 r--p 001b1000 08:05 7077901                    /lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+7f03e3ff1000-7f03e3ffc000 rw-p 001cc000 08:05 7077901                    /lib/x86_64-linux-gnu/libcrypto.so.1.0.0
+7f03e3ffc000-7f03e4000000 rw-p 00000000 00:00 0 
+7f03e4000000-7f03e467c000 rw-p 00000000 00:00 0 
+7f03e467c000-7f03e8000000 ---p 00000000 00:00 0 
+7f03e80ae000-7f03e8123000 r-xp 00000000 08:05 4326195                    /home/dinhtta/local/lib/libedbcrypto.so
+7f03e8123000-7f03e8323000 ---p 00075000 08:05 4326195                    /home/dinhtta/local/lib/libedbcrypto.so
+7f03e8323000-7f03e8324000 r--p 00075000 08:05 4326195                    /home/dinhtta/local/lib/libedbcrypto.so
+7f03e8324000-7f03e8327000 rw-p 00076000 08:05 4326195                    /home/dinhtta/local/lib/libedbcrypto.so
+7f03e8327000-7f03e8330000 rw-p 00000000 00:00 0 
+7f03e8346000-7f03e8348000 rw-p 00000000 00:00 0 
+7f03e8348000-7f03e8363000 r-xp 00000000 08:05 4856372                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/native/Linux-amd64-64/libhryto.so
+7f03e8363000-7f03e8562000 ---p 0001b000 08:05 4856372                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/native/Linux-amd64-64/libhryto.so
+7f03e8562000-7f03e8563000 r--p 0001a000 08:05 4856372                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/native/Linux-amd64-64/libhryto.so
+7f03e8563000-7f03e8564000 rw-p 0001b000 08:05 4856372                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/native/Linux-amd64-64/libhryto.so
+7f03e8564000-7f03e8566000 r--s 00019000 08:05 4458213                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/jce.jar
+7f03e8566000-7f03e8567000 r-xp 00000000 08:05 4458384                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libjaas_unix.so
+7f03e8567000-7f03e8766000 ---p 00001000 08:05 4458384                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libjaas_unix.so
+7f03e8766000-7f03e8767000 rw-p 00000000 08:05 4458384                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libjaas_unix.so
+7f03e8767000-7f03e876f000 r-xp 00000000 08:05 4458358                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libmanagement.so
+7f03e876f000-7f03e896e000 ---p 00008000 08:05 4458358                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libmanagement.so
+7f03e896e000-7f03e896f000 rw-p 00007000 08:05 4458358                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libmanagement.so
+7f03e896f000-7f03e8973000 r--s 0002e000 08:05 5373969                    /home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/datatools.jar
+7f03e8973000-7f03e8977000 r--s 0008a000 08:05 4458321                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/jsse.jar
+7f03e8977000-7f03e8981000 r--s 00254000 08:05 4458242                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/resources.jar
+7f03e8981000-7f03e8996000 r-xp 00000000 08:05 4458356                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libnet.so
+7f03e8996000-7f03e8b96000 ---p 00015000 08:05 4458356                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libnet.so
+7f03e8b96000-7f03e8b97000 rw-p 00015000 08:05 4458356                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libnet.so
+7f03e8b97000-7f03e8ba7000 r-xp 00000000 08:05 4458406                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libnio.so
+7f03e8ba7000-7f03e8da7000 ---p 00010000 08:05 4458406                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libnio.so
+7f03e8da7000-7f03e8da8000 rw-p 00010000 08:05 4458406                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libnio.so
+7f03e8da8000-7f03e8db2000 r--s 00063000 08:05 5373977                    /home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/secureHadoop.jar
+7f03e8db2000-7f03e8dce000 r--s 00167000 08:05 5374010                    /home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/mahout-core-0.7.jar
+7f03e8dce000-7f03e8deb000 r--s 00129000 08:05 5374011                    /home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/mahout-math-0.7.jar
+7f03e8deb000-7f03e8dec000 r--s 00003000 08:05 4722698                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/xmlenc-0.52.jar
+7f03e8dec000-7f03e8df4000 r--s 0005f000 08:05 4722701                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/velocity-1.6.4.jar
+7f03e8df4000-7f03e8df6000 r--s 0000a000 08:05 4718987                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/uncommons-maths-1.2.2.jar
+7f03e8df6000-7f03e8df8000 r--s 000f2000 08:05 4722708                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/snappy-java-1.0.3.2.jar
+7f03e8df8000-7f03e8df9000 r--s 00002000 08:05 4722725                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/slf4j-log4j12-1.6.1.jar
+7f03e8df9000-7f03e8dfb000 r--s 00005000 08:05 4722685                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/slf4j-api-1.6.1.jar
+7f03e8dfb000-7f03e8dfd000 r--s 0001f000 08:05 4722734                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/servlet-api-2.5-20081211.jar
+7f03e8dfd000-7f03e8e01000 r--s 00028000 08:05 4722717                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/qdox-1.12.jar
+7f03e8e01000-7f03e8e02000 r--s 00001000 08:05 4722721                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/paranamer-generator-2.3.jar
+7f03e8e02000-7f03e8e03000 r--s 00001000 08:05 4722727                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/paranamer-ant-2.3.jar
+7f03e8e03000-7f03e8e05000 r--s 00006000 08:05 4722697                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/paranamer-2.3.jar
+7f03e8e05000-7f03e8e07000 r--s 0000e000 08:05 4722687                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/oro-2.0.8.jar
+7f03e8e07000-7f03e8e24000 r--s 0013e000 08:05 4722699                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/mockito-all-1.8.5.jar
+7f03e8e24000-7f03e8e3e000 r--s 0012f000 08:05 4722733                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/mockito-all-1.8.2.jar
+7f03e8e3e000-7f03e8e47000 r--s 0006d000 08:05 4722720                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/log4j-1.2.16.jar
+7f03e8e47000-7f03e8e48000 r--s 00002000 08:05 4722732                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/kfs-0.3.jar
+7f03e8e48000-7f03e8e4e000 r--s 00034000 08:05 4722707                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/junit-4.8.1.jar
+7f03e8e4e000-7f03e8e52000 r--s 0001e000 08:05 4722690                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/jsp-api-2.1-glassfish-2.1.v20091210.jar
+7f03e8e52000-7f03e8e54000 r--s 00000000 08:05 4722728                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/jsp-2.1-jetty-6.1.26.jar
+7f03e8e54000-7f03e8e65000 r--s 000ea000 08:05 4722714                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/jsp-2.1-glassfish-2.1.v20091210.jar
+7f03e8e65000-7f03e8e68000 r--s 0002b000 08:05 4722731                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/jsch-0.1.42.jar
+7f03e8e68000-7f03e8e6c000 r--s 00028000 08:05 4722716                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/jetty-util-6.1.26.jar
+7f03e8e6c000-7f03e8e73000 r--s 0007d000 08:05 4722729                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/jetty-6.1.26.jar
+7f03e8e73000-7f03e8e79000 r--s 00057000 08:05 4722737                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/jets3t-0.7.1.jar
+7f03e8e79000-7f03e8e7a000 r--s 0001f000 08:05 4722724                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/jdiff-1.0.9.jar
+7f03e8e7a000-7f03e8e7c000 r--s 00011000 08:05 4722710                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/jasper-runtime-5.5.12.jar
+7f03e8e7c000-7f03e8e81000 r--s 0005e000 08:05 4722736                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/jasper-compiler-5.5.12.jar
+7f03e8e81000-7f03e8e8d000 r--s 0008d000 08:05 4722695                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/jackson-mapper-asl-1.7.3.jar
+7f03e8e8d000-7f03e8e91000 r--s 0002f000 08:05 4722722                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/jackson-core-asl-1.7.3.jar
+7f03e8e91000-7f03e8e9a000 r--s 000a4000 08:05 4722723                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/hsqldb-1.8.0.10.jar
+7f03e8e9a000-7f03e8ed1000 r--s 00388000 08:05 4719936                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/hadoop-core-1.0.2.jar
+7f03e8ed1000-7f03e8ee9000 r--s 00100000 08:05 4722704                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/guava-r09.jar
+7f03e8ee9000-7f03e8ef7000 r--s 0018b000 08:05 4722689                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/ecj-3.5.1.jar
+7f03e8ef7000-7f03e8f1a000 r--s 00344000 08:05 4722693                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/core-3.1.1.jar
+7f03e8f1a000-7f03e8f1f000 r--s 00028000 08:05 4722688                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/commons-net-1.4.1.jar
+7f03e8f1f000-7f03e8f21000 r--s 0000d000 08:05 4722713                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/commons-logging-1.1.1.jar
+7f03e8f21000-7f03e8f26000 r--s 00040000 08:05 4722705                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/commons-lang-2.5.jar
+7f03e8f26000-7f03e8f2c000 r--s 00045000 08:05 4722718                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/commons-httpclient-3.1.jar
+7f03e8f2c000-7f03e8f2f000 r--s 00019000 08:05 4722735                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/commons-el-1.0.jar
+7f03e8f2f000-7f03e8f31000 r--s 00002000 08:05 4722719                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/commons-daemon-1.0.1.jar
+7f03e8f31000-7f03e8f3f000 r--s 0007f000 08:05 4722702                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/commons-collections-3.2.1.jar
+7f03e8f3f000-7f03e8f41000 r--s 0000d000 08:05 4722686                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/commons-codec-1.4.jar
+7f03e8f41000-7f03e8f45000 r--s 00026000 08:05 4722706                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/avro-ipc-1.5.3.jar
+7f03e8f45000-7f03e8f4b000 r--s 0003b000 08:05 4722696                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/avro-1.5.3.jar
+7f03e8f4b000-7f03e8faf000 r--s 007f9000 08:05 4722694                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/aspectjtools-1.6.5.jar
+7f03e8faf000-7f03e8fb4000 r--s 00018000 08:05 4722711                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/aspectjrt-1.6.5.jar
+7f03e8fb4000-7f03e8fc8000 r--s 0012f000 08:05 4722691                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/ant-1.7.1.jar
+7f03e8fc8000-7f03e8fd7000 r--s 000ee000 08:05 4722730                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/ant-1.6.5.jar
+7f03e8fd7000-7f03e8fdd000 r--s 00044000 08:05 4592353                    /home/dinhtta/Hadoop/hadoop-0.22.0/hadoop-mapred-tools-0.22.0.jar
+7f03e8fdd000-7f03e9048000 r--s 00e18000 08:05 4332271                    /home/dinhtta/Downloads/jdk1.7.0_25/lib/tools.jar
+7f03e9048000-7f03e9049000 ---p 00000000 00:00 0 
+7f03e9049000-7f03e9149000 rw-p 00000000 00:00 0                          [stack:15328]
+7f03e9149000-7f03e914c000 ---p 00000000 00:00 0 
+7f03e914c000-7f03e924a000 rw-p 00000000 00:00 0                          [stack:15327]
+7f03e924a000-7f03e924d000 ---p 00000000 00:00 0 
+7f03e924d000-7f03e934b000 rw-p 00000000 00:00 0                          [stack:15326]
+7f03e934b000-7f03e934e000 ---p 00000000 00:00 0 
+7f03e934e000-7f03e944c000 rw-p 00000000 00:00 0                          [stack:15325]
+7f03e944c000-7f03e944f000 ---p 00000000 00:00 0 
+7f03e944f000-7f03e954d000 rw-p 00000000 00:00 0                          [stack:15324]
+7f03e954d000-7f03e9c2e000 r--p 00000000 08:05 5773448                    /usr/lib/locale/locale-archive
+7f03e9c2e000-7f03e9c31000 ---p 00000000 00:00 0 
+7f03e9c31000-7f03e9d2f000 rw-p 00000000 00:00 0                          [stack:15322]
+7f03e9d2f000-7f03e9d32000 ---p 00000000 00:00 0 
+7f03e9d32000-7f03ec000000 rw-p 00000000 00:00 0                          [stack:15321]
+7f03ec000000-7f03ec5bf000 rw-p 00000000 00:00 0 
+7f03ec5bf000-7f03f0000000 ---p 00000000 00:00 0 
+7f03f0000000-7f03f0002000 r--s 00009000 08:05 4722692                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/commons-cli-1.2.jar
+7f03f0002000-7f03f001a000 r--s 00178000 08:05 4587661                    /home/dinhtta/Hadoop/hadoop-0.22.0/hadoop-mapred-test-0.22.0.jar
+7f03f001a000-7f03f001f000 r--s 00039000 08:05 4592542                    /home/dinhtta/Hadoop/hadoop-0.22.0/hadoop-mapred-examples-0.22.0.jar
+7f03f001f000-7f03f002d000 r--s 00118000 08:05 4592436                    /home/dinhtta/Hadoop/hadoop-0.22.0/hadoop-mapred-0.22.0-sources.jar
+7f03f002d000-7f03f0046000 r--s 0019b000 08:05 4592352                    /home/dinhtta/Hadoop/hadoop-0.22.0/hadoop-mapred-0.22.0.jar
+7f03f0046000-7f03f004c000 r--s 00076000 08:05 4592362                    /home/dinhtta/Hadoop/hadoop-0.22.0/hadoop-hdfs-test-0.22.0-sources.jar
+7f03f004c000-7f03f004d000 ---p 00000000 00:00 0 
+7f03f004d000-7f03f1000000 rw-p 00000000 00:00 0                          [stack:15320]
+7f03f1000000-7f03f1270000 rwxp 00000000 00:00 0 
+7f03f1270000-7f03f469f000 rw-p 00000000 00:00 0 
+7f03f469f000-7f03f8000000 ---p 00000000 00:00 0 
+7f03f8000000-7f03f8001000 r--s 0000a000 08:05 4722712                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/commons-logging-api-1.1.jar
+7f03f8001000-7f03f800b000 r--s 000c3000 08:05 4587655                    /home/dinhtta/Hadoop/hadoop-0.22.0/hadoop-hdfs-test-0.22.0.jar
+7f03f800b000-7f03f8018000 r--s 000f4000 08:05 4592543                    /home/dinhtta/Hadoop/hadoop-0.22.0/hadoop-hdfs-0.22.0.jar
+7f03f8018000-7f03f8189000 rw-p 00000000 00:00 0 
+7f03f8189000-7f03f8346000 r--s 039f9000 08:05 4458122                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/rt.jar
+7f03f8346000-7f03f8be2000 rw-p 00000000 00:00 0 
+7f03f8be2000-7f03f8be3000 ---p 00000000 00:00 0 
+7f03f8be3000-7f03f8ce3000 rw-p 00000000 00:00 0                          [stack:15318]
+7f03f8ce3000-7f03f8ce4000 ---p 00000000 00:00 0 
+7f03f8ce4000-7f03f8de4000 rw-p 00000000 00:00 0                          [stack:15317]
+7f03f8de4000-7f03f8de5000 ---p 00000000 00:00 0 
+7f03f8de5000-7f03f8ee5000 rw-p 00000000 00:00 0                          [stack:15314]
+7f03f8ee5000-7f03f8ee6000 ---p 00000000 00:00 0 
+7f03f8ee6000-7f03f8ff1000 rw-p 00000000 00:00 0                          [stack:15312]
+7f03f8ff1000-7f03f900f000 rw-p 00000000 00:00 0 
+7f03f900f000-7f03f9023000 rw-p 00000000 00:00 0 
+7f03f9023000-7f03f915d000 rw-p 00000000 00:00 0 
+7f03f915d000-7f03f9168000 rw-p 00000000 00:00 0 
+7f03f9168000-7f03f9186000 rw-p 00000000 00:00 0 
+7f03f9186000-7f03f919a000 rw-p 00000000 00:00 0 
+7f03f919a000-7f03f92d3000 rw-p 00000000 00:00 0 
+7f03f92d3000-7f03f92de000 rw-p 00000000 00:00 0 
+7f03f92de000-7f03f937a000 rw-p 00000000 00:00 0 
+7f03f937a000-7f03f937b000 rw-p 00000000 00:00 0 
+7f03f937b000-7f03f9396000 r-xp 00000000 08:05 4458381                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libzip.so
+7f03f9396000-7f03f9595000 ---p 0001b000 08:05 4458381                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libzip.so
+7f03f9595000-7f03f9596000 rw-p 0001a000 08:05 4458381                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libzip.so
+7f03f9596000-7f03f95a2000 r-xp 00000000 08:05 7081676                    /lib/x86_64-linux-gnu/libnss_files-2.17.so
+7f03f95a2000-7f03f97a1000 ---p 0000c000 08:05 7081676                    /lib/x86_64-linux-gnu/libnss_files-2.17.so
+7f03f97a1000-7f03f97a2000 r--p 0000b000 08:05 7081676                    /lib/x86_64-linux-gnu/libnss_files-2.17.so
+7f03f97a2000-7f03f97a3000 rw-p 0000c000 08:05 7081676                    /lib/x86_64-linux-gnu/libnss_files-2.17.so
+7f03f97a3000-7f03f97ae000 r-xp 00000000 08:05 7081680                    /lib/x86_64-linux-gnu/libnss_nis-2.17.so
+7f03f97ae000-7f03f99ad000 ---p 0000b000 08:05 7081680                    /lib/x86_64-linux-gnu/libnss_nis-2.17.so
+7f03f99ad000-7f03f99ae000 r--p 0000a000 08:05 7081680                    /lib/x86_64-linux-gnu/libnss_nis-2.17.so
+7f03f99ae000-7f03f99af000 rw-p 0000b000 08:05 7081680                    /lib/x86_64-linux-gnu/libnss_nis-2.17.so
+7f03f99af000-7f03f99c6000 r-xp 00000000 08:05 7081670                    /lib/x86_64-linux-gnu/libnsl-2.17.so
+7f03f99c6000-7f03f9bc5000 ---p 00017000 08:05 7081670                    /lib/x86_64-linux-gnu/libnsl-2.17.so
+7f03f9bc5000-7f03f9bc6000 r--p 00016000 08:05 7081670                    /lib/x86_64-linux-gnu/libnsl-2.17.so
+7f03f9bc6000-7f03f9bc7000 rw-p 00017000 08:05 7081670                    /lib/x86_64-linux-gnu/libnsl-2.17.so
+7f03f9bc7000-7f03f9bc9000 rw-p 00000000 00:00 0 
+7f03f9bc9000-7f03f9bd1000 r-xp 00000000 08:05 7081672                    /lib/x86_64-linux-gnu/libnss_compat-2.17.so
+7f03f9bd1000-7f03f9dd0000 ---p 00008000 08:05 7081672                    /lib/x86_64-linux-gnu/libnss_compat-2.17.so
+7f03f9dd0000-7f03f9dd1000 r--p 00007000 08:05 7081672                    /lib/x86_64-linux-gnu/libnss_compat-2.17.so
+7f03f9dd1000-7f03f9dd2000 rw-p 00008000 08:05 7081672                    /lib/x86_64-linux-gnu/libnss_compat-2.17.so
+7f03f9dd2000-7f03f9dfb000 r-xp 00000000 08:05 4458372                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libjava.so
+7f03f9dfb000-7f03f9ffb000 ---p 00029000 08:05 4458372                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libjava.so
+7f03f9ffb000-7f03f9ffd000 rw-p 00029000 08:05 4458372                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libjava.so
+7f03f9ffd000-7f03fa00a000 r-xp 00000000 08:05 4458361                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libverify.so
+7f03fa00a000-7f03fa209000 ---p 0000d000 08:05 4458361                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libverify.so
+7f03fa209000-7f03fa20b000 rw-p 0000c000 08:05 4458361                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/libverify.so
+7f03fa20b000-7f03fa212000 r-xp 00000000 08:05 7081723                    /lib/x86_64-linux-gnu/librt-2.17.so
+7f03fa212000-7f03fa411000 ---p 00007000 08:05 7081723                    /lib/x86_64-linux-gnu/librt-2.17.so
+7f03fa411000-7f03fa412000 r--p 00006000 08:05 7081723                    /lib/x86_64-linux-gnu/librt-2.17.so
+7f03fa412000-7f03fa413000 rw-p 00007000 08:05 7081723                    /lib/x86_64-linux-gnu/librt-2.17.so
+7f03fa413000-7f03fa516000 r-xp 00000000 08:05 7081651                    /lib/x86_64-linux-gnu/libm-2.17.so
+7f03fa516000-7f03fa716000 ---p 00103000 08:05 7081651                    /lib/x86_64-linux-gnu/libm-2.17.so
+7f03fa716000-7f03fa717000 r--p 00103000 08:05 7081651                    /lib/x86_64-linux-gnu/libm-2.17.so
+7f03fa717000-7f03fa718000 rw-p 00104000 08:05 7081651                    /lib/x86_64-linux-gnu/libm-2.17.so
+7f03fa718000-7f03fb159000 r-xp 00000000 08:05 4458379                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/server/libjvm.so
+7f03fb159000-7f03fb359000 ---p 00a41000 08:05 4458379                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/server/libjvm.so
+7f03fb359000-7f03fb3fc000 rw-p 00a41000 08:05 4458379                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/server/libjvm.so
+7f03fb3fc000-7f03fb438000 rw-p 00000000 00:00 0 
+7f03fb438000-7f03fb5f6000 r-xp 00000000 08:05 7081603                    /lib/x86_64-linux-gnu/libc-2.17.so
+7f03fb5f6000-7f03fb7f5000 ---p 001be000 08:05 7081603                    /lib/x86_64-linux-gnu/libc-2.17.so
+7f03fb7f5000-7f03fb7f9000 r--p 001bd000 08:05 7081603                    /lib/x86_64-linux-gnu/libc-2.17.so
+7f03fb7f9000-7f03fb7fb000 rw-p 001c1000 08:05 7081603                    /lib/x86_64-linux-gnu/libc-2.17.so
+7f03fb7fb000-7f03fb800000 rw-p 00000000 00:00 0 
+7f03fb800000-7f03fb803000 r-xp 00000000 08:05 7081618                    /lib/x86_64-linux-gnu/libdl-2.17.so
+7f03fb803000-7f03fba02000 ---p 00003000 08:05 7081618                    /lib/x86_64-linux-gnu/libdl-2.17.so
+7f03fba02000-7f03fba03000 r--p 00002000 08:05 7081618                    /lib/x86_64-linux-gnu/libdl-2.17.so
+7f03fba03000-7f03fba04000 rw-p 00003000 08:05 7081618                    /lib/x86_64-linux-gnu/libdl-2.17.so
+7f03fba04000-7f03fba1a000 r-xp 00000000 08:05 4458401                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/jli/libjli.so
+7f03fba1a000-7f03fbc1a000 ---p 00016000 08:05 4458401                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/jli/libjli.so
+7f03fbc1a000-7f03fbc1b000 rw-p 00016000 08:05 4458401                    /home/dinhtta/Downloads/jdk1.7.0_25/jre/lib/amd64/jli/libjli.so
+7f03fbc1b000-7f03fbc33000 r-xp 00000000 08:05 7081715                    /lib/x86_64-linux-gnu/libpthread-2.17.so
+7f03fbc33000-7f03fbe32000 ---p 00018000 08:05 7081715                    /lib/x86_64-linux-gnu/libpthread-2.17.so
+7f03fbe32000-7f03fbe33000 r--p 00017000 08:05 7081715                    /lib/x86_64-linux-gnu/libpthread-2.17.so
+7f03fbe33000-7f03fbe34000 rw-p 00018000 08:05 7081715                    /lib/x86_64-linux-gnu/libpthread-2.17.so
+7f03fbe34000-7f03fbe38000 rw-p 00000000 00:00 0 
+7f03fbe38000-7f03fbe5b000 r-xp 00000000 08:05 7081579                    /lib/x86_64-linux-gnu/ld-2.17.so
+7f03fbe5b000-7f03fbe5d000 r--s 0000f000 08:05 4722709                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/avro-compiler-1.5.3.jar
+7f03fbe5d000-7f03fbe5e000 r--s 0000a000 08:05 4722715                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/asm-3.3.jar
+7f03fbe5e000-7f03fbe65000 r--s 0009f000 08:05 4592544                    /home/dinhtta/Hadoop/hadoop-0.22.0/hadoop-hdfs-0.22.0-sources.jar
+7f03fbe65000-7f03fbe7b000 r--s 0013d000 08:05 4592354                    /home/dinhtta/Hadoop/hadoop-0.22.0/hadoop-common-0.22.0.jar
+7f03fbe7b000-7f03fbe85000 rw-p 00000000 00:00 0 
+7f03fbe85000-7f03fbf3b000 rw-p 00000000 00:00 0 
+7f03fbf3b000-7f03fbf3e000 ---p 00000000 00:00 0 
+7f03fbf3e000-7f03fc040000 rw-p 00000000 00:00 0                          [stack:15311]
+7f03fc040000-7f03fc041000 r--s 00002000 08:05 4722726                    /home/dinhtta/Hadoop/hadoop-0.22.0/lib/ant-launcher-1.7.1.jar
+7f03fc041000-7f03fc042000 r--s 00001000 08:05 4592363                    /home/dinhtta/Hadoop/hadoop-0.22.0/hadoop-hdfs-ant-0.22.0.jar
+7f03fc042000-7f03fc04e000 r--s 000a7000 08:05 4592540                    /home/dinhtta/Hadoop/hadoop-0.22.0/hadoop-common-test-0.22.0.jar
+7f03fc04e000-7f03fc056000 rw-s 00000000 08:05 3801226                    /tmp/hsperfdata_dinhtta/15281
+7f03fc056000-7f03fc057000 rw-p 00000000 00:00 0 
+7f03fc057000-7f03fc058000 r--p 00000000 00:00 0 
+7f03fc058000-7f03fc05a000 rw-p 00000000 00:00 0 
+7f03fc05a000-7f03fc05b000 r--p 00022000 08:05 7081579                    /lib/x86_64-linux-gnu/ld-2.17.so
+7f03fc05b000-7f03fc05d000 rw-p 00023000 08:05 7081579                    /lib/x86_64-linux-gnu/ld-2.17.so
+7fffeefb6000-7fffeefd9000 rw-p 00000000 00:00 0                          [stack]
+7fffeeffe000-7fffef000000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Xmx1000m -Dhadoop.log.dir=/home/dinhtta/Hadoop/hadoop-0.22.0/bin/../logs -Dhadoop.log.file=hadoop.log -Dhadoop.home.dir=/home/dinhtta/Hadoop/hadoop-0.22.0/bin/.. -Dhadoop.id.str= -Dhadoop.root.logger=INFO,console -Dhadoop.security.logger=INFO,console -Djava.library.path=/home/dinhtta/Research/SecureHadoop/bin:/home/dinhtta/Hadoop/hadoop-0.22.0/bin/../lib/native/Linux-amd64-64 -Dhadoop.policy.file=hadoop-policy.xml -Djava.net.preferIPv4Stack=true 
+java_command: org.apache.hadoop.util.RunJar ../../lib/datatools.jar org.apache.mahout.clustering.kmeans.KMeansDataEncryptor -conf mapred.xml -files ../../c++/libhryto.so -D mapred.child.env=LD_LIBRARY_PATH=/home/dinhtta/local/lib:/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib -libjars ../../lib/mahout-core-0.7.jar,../../lib/mahout-math-0.7.jar,../../lib/secureHadoop.jar /HiBench/KMeans/Input/samples /HiBench/KMeans/EncryptedInput/samples /HiBench/KMeans/Input/cluster/part-00000 /HiBench/KMeans/EncryptedInput/cluster/part-00000
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/home/dinhtta/Downloads/jdk1.7.0_25
+PATH=/home/dinhtta/hive-0.9.0-bin/bin:/home/dinhtta/Downloads/jdk1.7.0_25/bin:/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/dinhtta/Hadoop/hadoop-0.22.0/bin
+LD_LIBRARY_PATH=/home/dinhtta/local/lib
+SHELL=/bin/bash
+DISPLAY=:0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x8a26a0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x8a26a0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x73f3d0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libjvm.so+0x73f3d0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGXFSZ: [libjvm.so+0x73f3d0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x73f3d0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x73ed20], sa_mask[0]=0x00000000, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x7410b0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: [libjvm.so+0x7410b0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGTERM: [libjvm.so+0x7410b0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x7410b0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:wheezy/sid
+
+uname:Linux 3.8.0-27-generic #40-Ubuntu SMP Tue Jul 9 00:17:05 UTC 2013 x86_64
+libc:glibc 2.17 NPTL 2.17 
+rlimit: STACK 8192k, CORE 0k, NPROC 30395, NOFILE 4096, AS infinity
+load average:0.23 0.14 0.18
+
+/proc/meminfo:
+MemTotal:        3910368 kB
+MemFree:          455088 kB
+Buffers:           29500 kB
+Cached:           523516 kB
+SwapCached:       137420 kB
+Active:          2221752 kB
+Inactive:         971320 kB
+Active(anon):    1995016 kB
+Inactive(anon):   670712 kB
+Active(file):     226736 kB
+Inactive(file):   300608 kB
+Unevictable:          48 kB
+Mlocked:              48 kB
+SwapTotal:       4051964 kB
+SwapFree:        3494712 kB
+Dirty:              1000 kB
+Writeback:             0 kB
+AnonPages:       2607504 kB
+Mapped:           102652 kB
+Shmem:             25388 kB
+Slab:             147968 kB
+SReclaimable:      98168 kB
+SUnreclaim:        49800 kB
+KernelStack:       12232 kB
+PageTables:        49160 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     6007148 kB
+Committed_AS:    7632844 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       90420 kB
+VmallocChunk:   34359644760 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       54076 kB
+DirectMap2M:     3999744 kB
+
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 37 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht, tsc, tscinvbit
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 37
+model name	: Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
+stepping	: 5
+microcode	: 0x2
+cpu MHz		: 1197.000
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt aes lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 6383.85
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 37
+model name	: Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
+stepping	: 5
+microcode	: 0x2
+cpu MHz		: 1197.000
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 2
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt aes lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 6383.85
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 37
+model name	: Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
+stepping	: 5
+microcode	: 0x2
+cpu MHz		: 3193.000
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt aes lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 6383.85
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 37
+model name	: Intel(R) Core(TM) i5 CPU         650  @ 3.20GHz
+stepping	: 5
+microcode	: 0x2
+cpu MHz		: 1197.000
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 2
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 11
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt aes lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 6383.85
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 3910368k(455088k free), swap 4051964k(3494712k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (23.25-b01) for linux-amd64 JRE (1.7.0_25-b15), built on Jun  5 2013 20:48:36 by "java_re" with gcc 4.3.0 20080428 (Red Hat 4.3.0-8)
+
+time: Sun May  4 15:40:41 2014
+elapsed time: 0 seconds
+

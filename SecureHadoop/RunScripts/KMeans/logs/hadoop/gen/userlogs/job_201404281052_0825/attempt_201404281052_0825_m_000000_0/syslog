@@ -1,0 +1,21 @@
+2014-05-02 20:06:47,596 INFO org.apache.hadoop.util.NativeCodeLoader: Loaded the native-hadoop library
+2014-05-02 20:06:47,843 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=MAP, sessionId=
+2014-05-02 20:06:47,844 WARN org.apache.hadoop.conf.Configuration: user.name is deprecated. Instead, use mapreduce.job.user.name
+2014-05-02 20:06:48,028 INFO org.apache.hadoop.mapreduce.util.ProcessTree: setsid exited with exit code 0
+2014-05-02 20:06:48,033 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.mapreduce.util.LinuxResourceCalculatorPlugin@5f38c99a
+2014-05-02 20:06:48,219 INFO org.apache.hadoop.mapred.MapTask: numReduceTasks: 0
+2014-05-02 20:06:48,318 INFO org.apache.mahout.clustering.kmeans.GenKMeansDatasetInteger: dimension=0: mean=526.531056414192, std=17.543765067713867
+2014-05-02 20:06:48,319 INFO org.apache.mahout.clustering.kmeans.GenKMeansDatasetInteger: dimension=1: mean=983.0254487648134, std=42.584180308378826
+2014-05-02 20:06:48,319 INFO org.apache.mahout.clustering.kmeans.GenKMeansDatasetInteger: dimension=2: mean=23.485241035498316, std=83.61778258766712
+2014-05-02 20:06:48,319 INFO org.apache.mahout.clustering.kmeans.GenKMeansDatasetInteger: dimension=3: mean=309.79900661133075, std=18.775511953209943
+2014-05-02 20:06:48,319 INFO org.apache.mahout.clustering.kmeans.GenKMeansDatasetInteger: dimension=4: mean=795.6309013945885, std=129.75906833425714
+2014-05-02 20:06:48,319 INFO org.apache.mahout.clustering.kmeans.GenKMeansDatasetInteger: dimension=5: mean=404.24777720412266, std=65.12639269367861
+2014-05-02 20:06:48,319 INFO org.apache.mahout.clustering.kmeans.GenKMeansDatasetInteger: dimension=6: mean=766.6890784024595, std=141.33794115676187
+2014-05-02 20:06:48,319 INFO org.apache.mahout.clustering.kmeans.GenKMeansDatasetInteger: dimension=7: mean=853.2126383942897, std=0.5811259058098317
+2014-05-02 20:06:48,319 INFO org.apache.mahout.clustering.kmeans.GenKMeansDatasetInteger: dimension=8: mean=483.85835430115685, std=88.63831958992554
+2014-05-02 20:06:48,319 INFO org.apache.mahout.clustering.kmeans.GenKMeansDatasetInteger: dimension=9: mean=600.7450326680623, std=87.71651022293085
+2014-05-02 20:06:48,319 INFO org.apache.mahout.clustering.kmeans.GenKMeansDatasetInteger: genearting 10 
+2014-05-02 20:06:48,399 INFO org.apache.hadoop.mapred.Task: Task:attempt_201404281052_0825_m_000000_0 is done. And is in the process of commiting
+2014-05-02 20:06:51,478 INFO org.apache.hadoop.mapred.Task: Task attempt_201404281052_0825_m_000000_0 is allowed to commit now
+2014-05-02 20:06:51,521 INFO org.apache.hadoop.mapred.FileOutputCommitter: Saved output of task 'attempt_201404281052_0825_m_000000_0' to hdfs://localhost/HiBench/KMeans/Input/samples
+2014-05-02 20:06:51,555 INFO org.apache.hadoop.mapred.Task: Task 'attempt_201404281052_0825_m_000000_0' done.

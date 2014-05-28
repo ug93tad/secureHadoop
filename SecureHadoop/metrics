@@ -1,0 +1,31 @@
+#List of metrics
+1. Setup cost (encryption)
+
+2. Storage cost
+
+3. Computation overhead:
+3.1. Compute cost
+3.2. Decryption cost
+
+4. Scale:
+4.1. More nodes
+4.2. More data
+
+5. Security level:
+5.1. Key size
+5.2. Leakage
+
+#List of tools:
+1) Public HOM
+2) Symmetric HOM
+
+#Workloads
+a. word count
+b. grep
+c. terasort
+d. aggregate (hive)
+e. indexing ***
+f. pagerank ***
+g. classification ***
+h. clustering ***
+i. other hive tasks: selection, join, in-link count ***

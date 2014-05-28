@@ -1,0 +1,564 @@
+JNIEXPORT void JNICALL Java_tds_hom_Paillier_keygen
+  (JNIEnv *env, jobject obj, jstring pubf, jstring privf){
+	unsigned char* pf = (unsigned char*)env->GetStringUTFChars(pubf,NULL); 
+	unsigned char* pvf = (unsigned char*)env->GetStringUTFChars(privf,NULL); 
+	hom.keygen((const char*)pf, (const char*)pvf);	
+}
+
+JNIEXPORT void JNICALL Java_tds_hom_Paillier_init_1public_1key
+  (JNIEnv *env, jobject obj, jstring pubf){
+	unsigned char* pf = (unsigned char*)env->GetStringUTFChars(pubf,NULL); 
+	hom.init_pub((const char*)pf); 
+}
+
+JNIEXPORT void JNICALL Java_tds_hom_Paillier_init_1private_1key
+  (JNIEnv *env, jobject obj, jstring privf){
+	unsigned char* pf = (unsigned char*)env->GetStringUTFChars(privf,NULL); 
+	hom.init_priv((const char*)pf); 
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_hom_Paillier_encrypt
+  (JNIEnv *env, jobject obj, jint val){
+	ZZ enc = hom.encrypt(to_ZZ((int)val)); 
+	int size = NumBytes(enc); 
+	if (size<PAILLIER_LEN_BYTES)
+		size = PAILLIER_LEN_BYTES;
+
+	unsigned char* bytes = (unsigned char*)malloc(size); 
+	BytesFromZZ(bytes,enc,size); 
+
+	jbyteArray ret = env->NewByteArray(size); 
+	env->SetByteArrayRegion(ret,0,size, (jbyte*)bytes); 
+	return ret; 
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_hom_Paillier_add
+  (JNIEnv *env, jobject obj, jbyteArray vals1, jbyteArray vals2){
+	int size1 = env->GetArrayLength(vals1); 
+	int size2 = env->GetArrayLength(vals2); 
+
+	unsigned char* bytes1 = (unsigned char*)malloc(size1);
+	unsigned char* bytes2 = (unsigned char*)malloc(size2);
+	env->GetByteArrayRegion(vals1,0,size1, (jbyte*)bytes1);
+	env->GetByteArrayRegion(vals2,0,size2, (jbyte*)bytes2); 
+
+	ZZ enc1 = ZZFromBytes(bytes1, size1);
+	ZZ enc2 = ZZFromBytes(bytes2, size2); 
+	ZZ sum = hom.add(enc1,enc2); 	
+	
+	int sizes = NumBytes(sum); 
+	if (sizes < PAILLIER_LEN_BYTES)
+		sizes = PAILLIER_LEN_BYTES; 
+
+	unsigned char* bytes3 = (unsigned char*)malloc(sizes); 
+	BytesFromZZ(bytes3,sum,sizes); 
+	jbyteArray ret = env->NewByteArray(sizes); 
+	env->SetByteArrayRegion(ret,0,sizes,(jbyte*)bytes3); 
+	return ret; 
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_hom_Paillier_subtract
+  (JNIEnv *env, jobject obj, jbyteArray vals1, jbyteArray vals2){
+	int size1 = env->GetArrayLength(vals1); 
+	int size2 = env->GetArrayLength(vals2); 
+
+	unsigned char* bytes1 = (unsigned char*)malloc(size1);
+	unsigned char* bytes2 = (unsigned char*)malloc(size2);
+	env->GetByteArrayRegion(vals1,0,size1, (jbyte*)bytes1);
+	env->GetByteArrayRegion(vals2,0,size2, (jbyte*)bytes2); 
+
+	ZZ enc1 = ZZFromBytes(bytes1, size1);
+	ZZ enc2 = ZZFromBytes(bytes2, size2); 
+	ZZ sum = hom.subtract(enc1,enc2); 	
+	
+	int sizes = NumBytes(sum); 
+	if (sizes < PAILLIER_LEN_BYTES)
+		sizes = PAILLIER_LEN_BYTES; 
+
+	unsigned char* bytes3 = (unsigned char*)malloc(sizes); 
+	BytesFromZZ(bytes3,sum,sizes); 
+	jbyteArray ret = env->NewByteArray(sizes); 
+	env->SetByteArrayRegion(ret,0,sizes,(jbyte*)bytes3); 
+	return ret; 
+}
+
+JNIEXPORT jstring JNICALL Java_tds_hom_Paillier_decryptToString
+  (JNIEnv *env, jobject obj, jbyteArray vals){
+	int size = env->GetArrayLength(vals); 
+	unsigned char* bytes = (unsigned char*)malloc(size);
+	env->GetByteArrayRegion(vals,0,size,(jbyte*)bytes); 
+	ZZ sum = ZZFromBytes(bytes,size); 
+	ZZ dec = hom.decrypt(sum); 
+	stringstream ss;
+	ss << dec; 
+	return env->NewStringUTF(ss.str().c_str()); 
+}
+
+
+JNIEXPORT void JNICALL Java_tds_hom_Elgamal_keygen
+  (JNIEnv *env, jobject obj, jstring pubFile, jstring privFile){
+	unsigned char* pf = (unsigned char*)env->GetStringUTFChars(pubFile,NULL); 
+	unsigned char* pvf = (unsigned char*)env->GetStringUTFChars(privFile,NULL); 
+	mult.keygen((const char*)pf, (const char*)pvf);	
+}
+
+JNIEXPORT void JNICALL Java_tds_hom_Elgamal_init_1public_1key
+  (JNIEnv *env, jobject obj, jstring pubFile){
+	unsigned char* pf = (unsigned char*)env->GetStringUTFChars(pubFile,NULL); 
+	mult.init_pub((const char*)pf); 
+}
+
+JNIEXPORT void JNICALL Java_tds_hom_Elgamal_init_1private_1key
+  (JNIEnv *env, jobject obj, jstring privFile){
+	unsigned char* pf = (unsigned char*)env->GetStringUTFChars(privFile,NULL); 
+	mult.init_priv((const char*)pf); 
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_hom_Elgamal_encrypt
+  (JNIEnv *env, jobject obj, jint val){
+	ZZ enc = mult.encrypt(to_ZZ((int)val)); 
+	int size = NumBytes(enc); 
+	//if (size<PAILLIER_LEN_BYTES)
+	//	size = PAILLIER_LEN_BYTES;
+
+	unsigned char* bytes = (unsigned char*)malloc(size); 
+	BytesFromZZ(bytes,enc,size); 
+
+	jbyteArray ret = env->NewByteArray(size); 
+	env->SetByteArrayRegion(ret,0,size, (jbyte*)bytes); 
+	return ret;	
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_hom_Elgamal_multiply
+  (JNIEnv *env, jobject obj, jbyteArray vals1, jbyteArray vals2){
+	int size1 = env->GetArrayLength(vals1); 
+	int size2 = env->GetArrayLength(vals2); 
+
+	unsigned char* bytes1 = (unsigned char*)malloc(size1);
+	unsigned char* bytes2 = (unsigned char*)malloc(size2);
+	env->GetByteArrayRegion(vals1,0,size1, (jbyte*)bytes1);
+	env->GetByteArrayRegion(vals2,0,size2, (jbyte*)bytes2); 
+
+	ZZ enc1 = ZZFromBytes(bytes1, size1);
+	ZZ enc2 = ZZFromBytes(bytes2, size2); 
+	ZZ sum = mult.multiply(enc1,enc2); 	
+	
+	int sizes = NumBytes(sum); 
+
+	unsigned char* bytes3 = (unsigned char*)malloc(sizes); 
+	BytesFromZZ(bytes3,sum,sizes); 
+	jbyteArray ret = env->NewByteArray(sizes); 
+	env->SetByteArrayRegion(ret,0,sizes,(jbyte*)bytes3); 
+	return ret; 
+}
+
+JNIEXPORT jlong JNICALL Java_tds_hom_Elgamal_decrypt
+  (JNIEnv *env, jobject obj, jbyteArray vals){
+	int size = env->GetArrayLength(vals); 
+	unsigned char* bytes = (unsigned char*)malloc(size);
+	env->GetByteArrayRegion(vals,0,size,(jbyte*)bytes); 
+	ZZ sum = ZZFromBytes(bytes,size); 
+	ZZ dec = mult.decrypt(sum); 
+
+	return to_long(dec); 	
+
+}
+
+JNIEXPORT jstring JNICALL Java_tds_hom_Elgamal_decryptToString
+  (JNIEnv *env, jobject obj, jbyteArray vals){
+	int size = env->GetArrayLength(vals); 
+	unsigned char* bytes = (unsigned char*)malloc(size);
+	env->GetByteArrayRegion(vals,0,size,(jbyte*)bytes); 
+	ZZ sum = ZZFromBytes(bytes,size); 
+	ZZ dec = mult.decrypt(sum);
+	
+	stringstream ss;
+	ss << dec; 
+	return env->NewStringUTF(ss.str().c_str()); 
+}
+
+
+#include "tds_hom_Ope.h"
+#include "crypto/ope.hh"
+#include <iostream>
+#include <openssl/rand.h>
+
+using namespace std;
+using namespace NTL; 
+
+OPE* ope; 
+int counter = 0; 
+
+JNIEXPORT void JNICALL Java_tds_hom_Ope_init
+  (JNIEnv *env, jobject obj, jstring key, jint pLen, jint cLen){
+	unsigned char* k = (unsigned char*)env->GetStringUTFChars(key,NULL); 
+	ope = new OPE(string(reinterpret_cast<const char*>(k)), pLen*8, cLen*8); 
+
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_hom_Ope_encrypt
+  (JNIEnv *env, jobject obj, jbyteArray pt){
+	int size = ope->getPlaintextLen()/8;  
+	unsigned char *bytes = (unsigned char*)malloc(size); 	
+	
+	env->GetByteArrayRegion(pt,0,size, (jbyte*)bytes);
+	ZZ toEncrypt= ZZFromBytes(bytes,size); 
+	ZZ ct = ope->encrypt(toEncrypt); 
+	
+	int clen = ope->getCiphertextLen()/8;
+	unsigned char* cbytes = (unsigned char*)malloc(clen); 
+
+	BytesFromZZ(cbytes,ct,clen); 
+	
+	jbyteArray ret = env->NewByteArray(clen); 
+	env->SetByteArrayRegion(ret,0,clen, (jbyte*)cbytes); 
+	return ret; 
+
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_hom_Ope_decrypt
+  (JNIEnv *env, jobject obj, jbyteArray ctext){
+	int size = ope->getCiphertextLen()/8;  
+	unsigned char *bytes = (unsigned char*)malloc(size); 
+	env->GetByteArrayRegion(ctext,0,size, (jbyte*)bytes);
+
+	ZZ pt = ope->decrypt(ZZFromBytes(bytes,size)); 
+
+	int plen = ope->getPlaintextLen()/8;
+	unsigned char* pbytes = (unsigned char*)malloc(plen); 
+	BytesFromZZ(pbytes,pt,plen); 
+	jbyteArray ret = env->NewByteArray(plen); 
+	env->SetByteArrayRegion(ret,0,plen, (jbyte*)pbytes); 
+	return ret; 
+
+}
+
+JNIEXPORT jstring JNICALL Java_crypto_Ope_decryptDistance
+  (JNIEnv *env, jobject obj, jbyteArray ctext){
+	int size = ope->getCiphertextLen()/8;  
+	unsigned char *bytes = (unsigned char*)malloc(size); 
+	env->GetByteArrayRegion(ctext,0,size, (jbyte*)bytes);
+
+	ZZ pt = ope->decrypt(ZZFromBytes(bytes,size)); 
+	stringstream ss;
+	ss << pt; 
+	return env->NewStringUTF(ss.str().c_str()); 
+
+}
+
+JNIEXPORT jint JNICALL Java_crypto_Ope_compareBytes
+  (JNIEnv *env, jobject obj, jbyteArray vals1, jbyteArray vals2){
+	int size = env->GetArrayLength(vals1); 
+
+	unsigned char *bytes = (unsigned char*)malloc(size); 
+	env->GetByteArrayRegion(vals1,0,size, (jbyte*)bytes);
+
+	ZZ v1 = ZZFromBytes(bytes,size); 
+	
+	size = env->GetArrayLength(vals2);
+	bytes = (unsigned char*)malloc(size); 
+	env->GetByteArrayRegion(vals2,0,size, (jbyte*)bytes);
+
+	ZZ v2 = ZZFromBytes(bytes,size);
+
+	if (v1<v2)
+		return -1;
+	else if (v1==v2)
+		return 0;
+	else
+		return 1; 
+}
+
+
+JNIEXPORT void JNICALL Java_tds_hom_switchable_Switchable_init__Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2
+  (JNIEnv *env, jobject obj, jstring paillierPub, jstring paillierPriv, jstring elgamalPub, jstring elgamalPriv){
+	unsigned char* pp = (unsigned char*)env->GetStringUTFChars(paillierPub,NULL); 
+	unsigned char* ppr = (unsigned char*)env->GetStringUTFChars(paillierPriv,NULL); 
+	unsigned char* ep = (unsigned char*)env->GetStringUTFChars(elgamalPub,NULL); 
+	unsigned char* epr = (unsigned char*)env->GetStringUTFChars(elgamalPriv,NULL); 
+	switchable.init((const char*)pp, (const char*)ppr, (const char*)ep, (const char*)epr); 	
+
+}
+
+JNIEXPORT void JNICALL Java_tds_hom_switchable_Switchable_init__Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2Ljava_lang_String_2II
+  (JNIEnv *env, jobject obj, jstring paillierPub, jstring paillierPriv, jstring elgamalPub, jstring elgamalPriv, jstring opeKey, jint pLen, jint cLen){
+	unsigned char* pp = (unsigned char*)env->GetStringUTFChars(paillierPub,NULL); 
+	unsigned char* ppr = (unsigned char*)env->GetStringUTFChars(paillierPriv,NULL); 
+	unsigned char* ep = (unsigned char*)env->GetStringUTFChars(elgamalPub,NULL); 
+	unsigned char* epr = (unsigned char*)env->GetStringUTFChars(elgamalPriv,NULL); 
+	unsigned char* k = (unsigned char*)env->GetStringUTFChars(opeKey,NULL); 
+
+	switchable.init((const char*)pp, (const char*)ppr, (const char*)ep, (const char*)epr, string(reinterpret_cast<const char*>(k)),pLen, cLen); 	
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_hom_switchable_Switchable_addToMulNative
+  (JNIEnv *env, jobject obj, jbyteArray vals){
+	int size = env->GetArrayLength(vals); 
+	unsigned char* bytes = (unsigned char*)malloc(size);
+	env->GetByteArrayRegion(vals,0,size,(jbyte*)bytes); 
+	ZZ add = ZZFromBytes(bytes,size); 
+	ZZ mul = switchable.addToMul(add);
+ 
+	int sizes = NumBytes(mul); 
+	unsigned char* bytes3 = (unsigned char*)malloc(sizes); 
+	BytesFromZZ(bytes3,mul,sizes); 
+	jbyteArray ret = env->NewByteArray(sizes); 
+	env->SetByteArrayRegion(ret,0,sizes,(jbyte*)bytes3); 
+	return ret; 
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_hom_switchable_Switchable_addToOpeNative
+  (JNIEnv *env, jobject obj, jbyteArray vals){
+	int size = env->GetArrayLength(vals); 
+	unsigned char* bytes = (unsigned char*)malloc(size);
+	env->GetByteArrayRegion(vals,0,size,(jbyte*)bytes); 
+	ZZ add = ZZFromBytes(bytes,size); 
+	ZZ mul = switchable.addToOpe(add);
+ 
+	int sizes = switchable.getOpeLen(); //ope->getCiphertextLen()/8;
+	unsigned char* bytes3 = (unsigned char*)malloc(sizes); 
+	BytesFromZZ(bytes3,mul,sizes); 
+	jbyteArray ret = env->NewByteArray(sizes); 
+	env->SetByteArrayRegion(ret,0,sizes,(jbyte*)bytes3); 
+	return ret; 
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_hom_switchable_Switchable_mulToAddNative
+  (JNIEnv *env, jobject obj, jbyteArray vals){
+	int size = env->GetArrayLength(vals); 
+	unsigned char* bytes = (unsigned char*)malloc(size);
+	env->GetByteArrayRegion(vals,0,size,(jbyte*)bytes); 
+	ZZ mul = ZZFromBytes(bytes,size); 
+	ZZ add = switchable.mulToAdd(mul);
+ 
+	int sizes = NumBytes(add); 
+	unsigned char* bytes3 = (unsigned char*)malloc(sizes); 
+	BytesFromZZ(bytes3,add,sizes); 
+	jbyteArray ret = env->NewByteArray(sizes); 
+	env->SetByteArrayRegion(ret,0,sizes,(jbyte*)bytes3); 
+	return ret; 
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_hom_switchable_Switchable_mulToOpeNative
+  (JNIEnv *env, jobject obj, jbyteArray vals){
+	int size = env->GetArrayLength(vals); 
+	unsigned char* bytes = (unsigned char*)malloc(size);
+	env->GetByteArrayRegion(vals,0,size,(jbyte*)bytes); 
+	ZZ mul = ZZFromBytes(bytes,size); 
+	ZZ add = switchable.mulToOpe(mul);
+ 
+	int sizes = NumBytes(add); 
+	unsigned char* bytes3 = (unsigned char*)malloc(sizes); 
+	BytesFromZZ(bytes3,add,sizes); 
+	jbyteArray ret = env->NewByteArray(sizes); 
+	env->SetByteArrayRegion(ret,0,sizes,(jbyte*)bytes3); 
+	return ret; 
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_hom_switchable_Switchable_opeToAddNative
+  (JNIEnv *env, jobject obj, jbyteArray vals){
+	int size = env->GetArrayLength(vals); 
+	unsigned char* bytes = (unsigned char*)malloc(size);
+	env->GetByteArrayRegion(vals,0,size,(jbyte*)bytes); 
+	ZZ mul = ZZFromBytes(bytes,size); 
+	ZZ add = switchable.opeToAdd(mul);
+ 
+	int sizes = NumBytes(add); 
+	unsigned char* bytes3 = (unsigned char*)malloc(sizes); 
+	BytesFromZZ(bytes3,add,sizes); 
+	jbyteArray ret = env->NewByteArray(sizes); 
+	env->SetByteArrayRegion(ret,0,sizes,(jbyte*)bytes3); 
+	return ret; 
+
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_hom_switchable_Switchable_opeToMulNative
+  (JNIEnv *env, jobject obj, jbyteArray vals){
+	int size = env->GetArrayLength(vals); 
+	unsigned char* bytes = (unsigned char*)malloc(size);
+	env->GetByteArrayRegion(vals,0,size,(jbyte*)bytes); 
+	ZZ mul = ZZFromBytes(bytes,size); 
+	ZZ add = switchable.opeToMul(mul);
+ 
+	int sizes = NumBytes(add); 
+	unsigned char* bytes3 = (unsigned char*)malloc(sizes); 
+	BytesFromZZ(bytes3,add,sizes); 
+	jbyteArray ret = env->NewByteArray(sizes); 
+	env->SetByteArrayRegion(ret,0,sizes,(jbyte*)bytes3); 
+	return ret; 
+}
+
+
+
+#include<stdio.h>
+#include<stdint.h>
+#include<stdlib.h>
+#include<iostream>
+#include<string.h>
+#include "crypto/SWPSearch.hh"
+#include "tds_hom_Searchable.h"
+using namespace std; 
+
+JNIEXPORT void JNICALL Java_tds_hom_Searchable_init
+  (JNIEnv *env, jobject obj, jstring key){
+	unsigned char* k = (unsigned char*)env->GetStringUTFChars(key,NULL); 
+	SWP::fixedKey = string(reinterpret_cast<const char*>(k)); 
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_hom_Searchable_encrypt
+  (JNIEnv *env, jobject obj, jstring word){
+	unsigned char* k = (unsigned char*)env->GetStringUTFChars(word,NULL); 
+	string pt(reinterpret_cast<char*>(k)); 
+	string ctext = SWP::encrypt(SWP::fixedKey,pt); 
+	jbyteArray ret = env->NewByteArray(ctext.length()); 
+	env->SetByteArrayRegion(ret,0,ctext.length(), (jbyte*)ctext.c_str()); 
+	return ret; 
+}
+
+JNIEXPORT jobject JNICALL Java_tds_hom_Searchable_getToken
+  (JNIEnv *env, jobject obj, jstring word){
+	string w(reinterpret_cast<char*>((unsigned char*)env->GetStringUTFChars(word,NULL))); 
+	Token token = SWP::token(SWP::fixedKey, w);
+
+	jclass cls = env->FindClass("tds/hom/SearchToken"); 
+	jmethodID constructorId = env->GetMethodID(cls,"<init>","([B[B)V"); 
+	
+	jbyteArray ciphs = env->NewByteArray(token.ciph.length()); 
+	jbyteArray wKs = env->NewByteArray(token.wordKey.length()); 
+	env->SetByteArrayRegion(ciphs,0,token.ciph.length(),(jbyte*)token.ciph.c_str()); 
+	env->SetByteArrayRegion(wKs,0,token.wordKey.length(),(jbyte*)token.wordKey.c_str()); 	
+
+
+	jobject newObj = env->NewObject(cls,constructorId,ciphs,wKs); 
+	return newObj; 
+}
+
+JNIEXPORT jboolean JNICALL Java_tds_hom_Searchable_match
+  (JNIEnv *env, jobject obj, jbyteArray ciphertext, jobject token){
+	int size = env->GetArrayLength(ciphertext); 
+	unsigned char *cb = (unsigned char*)malloc(size); 
+	env->GetByteArrayRegion(ciphertext,0,size, (jbyte*)cb);
+	string cipher((const char*)cb,size); 	
+
+	//token
+	jclass cls = env->FindClass("tds/hom/SearchToken");
+	jfieldID cipherId = env->GetFieldID(cls,"ciphertext", "[B"); 
+	jfieldID wordKeyId = env->GetFieldID(cls,"wordKey", "[B"); 
+	jbyteArray c = (jbyteArray)env->GetObjectField(token,cipherId); 
+	jbyteArray w = (jbyteArray)env->GetObjectField(token,wordKeyId); 
+	int cs = env->GetArrayLength(c); 
+	unsigned char *cbs = (unsigned char*)malloc(cs); 
+	env->GetByteArrayRegion(c,0,cs, (jbyte*)cbs);
+	string tciph((const char*)cbs,cs); 
+	
+	int ws = env->GetArrayLength(w); 
+	unsigned char *cws = (unsigned char*)malloc(ws); 
+	env->GetByteArrayRegion(w,0,ws, (jbyte*)cws);
+	string twordKey((const char*)cws,ws); 	
+	
+	Token t;
+	t.ciph=tciph; 
+	t.wordKey=twordKey; 
+	return SWP::match(t, cipher);  
+}
+
+JNIEXPORT void JNICALL Java_tds_common_Rand_init
+  (JNIEnv *env, jobject obj, jstring key){
+	unsigned char* k = (unsigned char*)env->GetStringUTFChars(key,NULL); 
+	rnd.init(k); 
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_common_Rand_encrypt_1word_1rnd
+  (JNIEnv *env, jobject obj, jstring word, jbyteArray randIV){
+	unsigned char* ptext = (unsigned char*)env->GetStringUTFChars(word,NULL);
+	int len = env->GetStringLength(word); 
+
+	unsigned char* ivRand = (unsigned char*)malloc(AES_BLOCK_SIZE); 
+	env->GetByteArrayRegion(randIV,0,AES_BLOCK_SIZE,(jbyte*)ivRand); 
+	unsigned char* ct; 
+	rnd.encrypt_word(ptext,len,ivRand,&ct); 
+	
+	jbyteArray ret = env->NewByteArray(len); 
+	env->SetByteArrayRegion(ret,0,len,(jbyte*)ct); 
+	return ret; 
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_common_Rand_encrypt_1word_1cbc__Ljava_lang_String_2_3B
+  (JNIEnv *env, jobject obj, jstring word, jbyteArray randIV){
+	unsigned char* ptext = (unsigned char*)env->GetStringUTFChars(word,NULL);
+	int len = env->GetStringLength(word); 
+
+	unsigned char* ivRand = (unsigned char*)malloc(AES_BLOCK_SIZE); 
+	env->GetByteArrayRegion(randIV,0,AES_BLOCK_SIZE,(jbyte*)ivRand); 
+	unsigned char* ct; 
+	int ctLen; 
+	rnd.encrypt_word_cbc(ptext,len,ivRand,&ct, &ctLen); 
+	
+	jbyteArray ret = env->NewByteArray(ctLen); 
+	env->SetByteArrayRegion(ret,0,ctLen,(jbyte*)ct); 
+	return ret; 
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_common_Rand_encrypt_1word_1cbc___3B_3B
+  (JNIEnv *env, jobject obj, jbyteArray wordBytes, jbyteArray randIV){
+	int len = env->GetArrayLength(wordBytes);
+        unsigned char* ptext = (unsigned char*)malloc(len);
+        env->GetByteArrayRegion(wordBytes,0,len,(jbyte*)ptext);
+
+	unsigned char* ivRand = (unsigned char*)malloc(AES_BLOCK_SIZE); 
+	env->GetByteArrayRegion(randIV,0,AES_BLOCK_SIZE,(jbyte*)ivRand); 
+	unsigned char* ct; 
+	int ctLen; 
+	
+	rnd.encrypt_word_cbc(ptext,len,ivRand,&ct, &ctLen); 
+	
+	jbyteArray ret = env->NewByteArray(ctLen); 
+	env->SetByteArrayRegion(ret,0,ctLen,(jbyte*)ct); 
+	return ret; 
+
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_common_Rand_decrypt_1word_1cbc
+  (JNIEnv *env, jobject obj, jbyteArray ctext, jbyteArray randIV){
+	int cl = env->GetArrayLength(ctext);
+        unsigned char* ct = (unsigned char*)malloc(cl);
+        env->GetByteArrayRegion(ctext,0,cl,(jbyte*)ct);
+	unsigned char* ivRand = (unsigned char*)malloc(AES_BLOCK_SIZE);
+        env->GetByteArrayRegion(randIV,0,AES_BLOCK_SIZE,(jbyte*)ivRand);
+
+        unsigned char* ptext;
+	int pLen; 
+
+        rnd.decrypt_word_cbc(ct,cl,ivRand,&ptext, &pLen);
+        jbyteArray ret = env->NewByteArray(pLen);
+        env->SetByteArrayRegion(ret,0,pLen,(jbyte*)ptext);
+        return ret;
+
+}
+
+
+JNIEXPORT jbyteArray JNICALL Java_tds_common_Rand_decrypt_1word_1rnd
+  (JNIEnv *env, jobject obj, jbyteArray ctext, jbyteArray randIV){
+	int cl = env->GetArrayLength(ctext);
+        unsigned char* ct = (unsigned char*)malloc(cl);
+        env->GetByteArrayRegion(ctext,0,cl,(jbyte*)ct);
+	unsigned char* ivRand = (unsigned char*)malloc(AES_BLOCK_SIZE);
+        env->GetByteArrayRegion(randIV,0,AES_BLOCK_SIZE,(jbyte*)ivRand);
+
+        unsigned char* ptext;
+        rnd.decrypt_word(ct,cl,ivRand,&ptext);
+        jbyteArray ret = env->NewByteArray(cl);
+        env->SetByteArrayRegion(ret,0,cl,(jbyte*)ptext);
+        return ret;
+
+}
+
+JNIEXPORT jbyteArray JNICALL Java_tds_common_Rand_randomBytes
+  (JNIEnv *env, jobject obj, jint length){
+	unsigned char* ret = (unsigned char*)malloc(length*sizeof(unsigned char)); 
+	RAND_bytes(ret,length); 
+	jbyteArray out = env->NewByteArray(length);
+	env->SetByteArrayRegion(out,0,length,(jbyte*)ret); 
+	return out; 
+}
+

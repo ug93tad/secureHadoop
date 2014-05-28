@@ -1,0 +1,176 @@
+14/05/06 18:38:16 WARN conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+14/05/06 18:38:17 INFO input.FileInputFormat: Total input paths to process : 8
+14/05/06 18:38:17 INFO mapreduce.JobSubmitter: number of splits:8
+14/05/06 18:38:18 INFO mapreduce.Job: Running job: job_201405061757_0006
+14/05/06 18:38:19 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/06 18:38:30 INFO mapreduce.Job:  map 25% reduce 0%
+14/05/06 18:38:31 INFO mapreduce.Job:  map 75% reduce 0%
+14/05/06 18:38:33 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/06 18:38:38 INFO mapreduce.Job: Job complete: job_201405061757_0006
+14/05/06 18:38:38 INFO mapreduce.Job: Counters: 19
+	FileInputFormatCounters
+		BYTES_READ=331984
+	FileSystemCounters
+		HDFS_BYTES_READ=333016
+		HDFS_BYTES_WRITTEN=1264088
+	Job Counters 
+		Data-local map tasks=8
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=42660
+		SLOTS_MILLIS_REDUCES=0
+		Launched map tasks=8
+	Map-Reduce Framework
+		CPU_MILLISECONDS=6130
+		Failed Shuffles=0
+		GC time elapsed (ms)=183
+		Map input records=4000
+		Map output records=4000
+		Merged Map outputs=0
+		PHYSICAL_MEMORY_BYTES=781950976
+		Spilled Records=0
+		SPLIT_RAW_BYTES=1032
+		VIRTUAL_MEMORY_BYTES=16396840960
+
+real	0m24.724s
+user	0m5.295s
+sys	0m0.361s
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/dinhtta/Hadoop/hadoop-0.22.0/lib/slf4j-log4j12-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/RunScripts/lib/mahout-examples-0.7-job.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+14/05/06 18:38:44 WARN conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+14/05/06 18:38:44 INFO common.AbstractJob: Command line arguments: {--clustering=null, --clusters=[/HiBench/KMeans/EncryptedInput/cluster], --convergenceDelta=[0.5], --distanceMeasure=[org.apache.mahout.common.distance.encrypt.EncryptedSquaredEuclideanDistanceMeasure], --endPhase=[2147483647], --input=[/HiBench/KMeans/EncryptedInput/samples], --maxIter=[1], --method=[mapreduce], --output=[/HiBench/KMeans/EncryptedOutput], --overwrite=null, --startPhase=[0], --tempDir=[temp]}
+14/05/06 18:38:45 INFO encrypt.EncryptedKMeansDriver: Input: /HiBench/KMeans/EncryptedInput/samples Clusters In: /HiBench/KMeans/EncryptedInput/cluster Out: /HiBench/KMeans/EncryptedOutput Distance: org.apache.mahout.common.distance.encrypt.EncryptedSquaredEuclideanDistanceMeasure
+14/05/06 18:38:45 INFO encrypt.EncryptedKMeansDriver: convergence: 0.5 max Iterations: 1 num Reduce Tasks: tds.io.EncryptedVectorWritable Input Vectors: {}
+14/05/06 18:38:55 INFO input.FileInputFormat: Total input paths to process : 8
+14/05/06 18:38:55 INFO mapreduce.JobSubmitter: number of splits:8
+14/05/06 18:38:56 INFO mapreduce.Job: Running job: job_201405061757_0007
+14/05/06 18:38:57 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/06 18:39:05 INFO mapreduce.Job:  map 50% reduce 0%
+14/05/06 18:39:06 INFO mapreduce.Job:  map 75% reduce 0%
+14/05/06 18:39:08 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/06 18:39:14 INFO mapreduce.Job:  map 100% reduce 100%
+14/05/06 18:39:16 INFO mapreduce.Job: Job complete: job_201405061757_0007
+14/05/06 18:39:16 INFO mapreduce.Job: Counters: 36
+	FileInputFormatCounters
+		BYTES_READ=1264088
+	FileSystemCounters
+		FILE_BYTES_READ=49734
+		FILE_BYTES_WRITTEN=99766
+		HDFS_BYTES_READ=1332852
+		HDFS_BYTES_WRITTEN=7058
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Job Counters 
+		Data-local map tasks=8
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=29896
+		SLOTS_MILLIS_REDUCES=6896
+		Launched map tasks=8
+		Launched reduce tasks=1
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		CPU_MILLISECONDS=9680
+		Failed Shuffles=0
+		GC time elapsed (ms)=264
+		Map input records=4000
+		Map output bytes=49472
+		Map output records=64
+		Merged Map outputs=8
+		PHYSICAL_MEMORY_BYTES=1837899776
+		Reduce input groups=8
+		Reduce input records=64
+		Reduce output records=8
+		Reduce shuffle bytes=49776
+		Shuffled Maps =8
+		Spilled Records=128
+		SPLIT_RAW_BYTES=1120
+		VIRTUAL_MEMORY_BYTES=18659217408
+14/05/06 18:39:17 INFO encrypt.EncryptedKMeansDriver: Clustering data
+14/05/06 18:39:17 INFO encrypt.EncryptedKMeansDriver: Running Clustering
+14/05/06 18:39:17 INFO encrypt.EncryptedKMeansDriver: Input: /HiBench/KMeans/EncryptedInput/samples Clusters In: /HiBench/KMeans/EncryptedOutput Out: /HiBench/KMeans/EncryptedOutput Distance: org.apache.mahout.common.distance.encrypt.EncryptedSquaredEuclideanDistanceMeasure@1f84f787
+14/05/06 18:39:18 INFO input.FileInputFormat: Total input paths to process : 8
+14/05/06 18:39:18 INFO mapreduce.JobSubmitter: number of splits:8
+14/05/06 18:39:18 INFO mapreduce.Job: Running job: job_201405061757_0008
+14/05/06 18:39:19 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/06 18:39:29 INFO mapreduce.Job:  map 37% reduce 0%
+14/05/06 18:39:30 INFO mapreduce.Job:  map 62% reduce 0%
+14/05/06 18:39:32 INFO mapreduce.Job:  map 75% reduce 0%
+14/05/06 18:39:33 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/06 18:39:38 INFO mapreduce.Job: Job complete: job_201405061757_0008
+14/05/06 18:39:38 INFO mapreduce.Job: Counters: 19
+	FileInputFormatCounters
+		BYTES_READ=1264088
+	FileSystemCounters
+		HDFS_BYTES_READ=1323496
+		HDFS_BYTES_WRITTEN=1280144
+	Job Counters 
+		Data-local map tasks=8
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=46905
+		SLOTS_MILLIS_REDUCES=0
+		Launched map tasks=8
+	Map-Reduce Framework
+		CPU_MILLISECONDS=13150
+		Failed Shuffles=0
+		GC time elapsed (ms)=189
+		Map input records=4000
+		Map output records=4000
+		Merged Map outputs=0
+		PHYSICAL_MEMORY_BYTES=903704576
+		Spilled Records=0
+		SPLIT_RAW_BYTES=1120
+		VIRTUAL_MEMORY_BYTES=16772550656
+
+real	1m1.519s
+user	0m9.520s
+sys	0m3.639s
+14/05/06 18:39:42 WARN conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+14/05/06 18:39:43 INFO input.FileInputFormat: Total input paths to process : 8
+14/05/06 18:39:43 INFO mapreduce.JobSubmitter: number of splits:8
+14/05/06 18:39:44 INFO mapreduce.Job: Running job: job_201405061757_0009
+14/05/06 18:39:45 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/06 18:39:57 INFO mapreduce.Job:  map 75% reduce 0%
+14/05/06 18:39:59 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/06 18:40:04 INFO mapreduce.Job: Job complete: job_201405061757_0009
+14/05/06 18:40:04 INFO mapreduce.Job: Counters: 19
+	FileInputFormatCounters
+		BYTES_READ=1280144
+	FileSystemCounters
+		HDFS_BYTES_READ=1281336
+		HDFS_BYTES_WRITTEN=157063
+	Job Counters 
+		Data-local map tasks=8
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=43091
+		SLOTS_MILLIS_REDUCES=0
+		Launched map tasks=8
+	Map-Reduce Framework
+		CPU_MILLISECONDS=3870
+		Failed Shuffles=0
+		GC time elapsed (ms)=129
+		Map input records=4000
+		Map output records=4000
+		Merged Map outputs=0
+		PHYSICAL_MEMORY_BYTES=805629952
+		Spilled Records=0
+		SPLIT_RAW_BYTES=1192
+		VIRTUAL_MEMORY_BYTES=16473841664
+
+real	0m24.304s
+user	0m5.307s
+sys	0m0.462s
+
+real	0m11.010s
+user	0m14.598s
+sys	0m1.158s

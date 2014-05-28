@@ -1,0 +1,66 @@
+14/05/06 18:00:29 WARN conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: KMeans Clustering Input Dataset : Synthetic ***********
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: Successfully generated Sample Generator Seeds
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: samples seeds are: 
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: mean: (990.8219778520092,695.7483080060466,841.450784681487,866.9921941300805,401.7524911378184,25.909277794546547,93.85754527763845,431.2043032000792) std: (9.085531330800745,135.691256720893,33.95072858670001,108.93154811344898,62.33641651187731,9.810198404038317,184.91271672324092,80.4348528511795)
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: mean: (723.3459756846077,415.5496146358668,352.1896678360469,865.4038198227073,130.421601926322,92.37273081583908,561.333671025181,404.32404335140836) std: (57.73006203779527,126.37100185359529,65.82430819788188,129.2323422973977,166.25907747363482,160.02396882144643,55.94651503748387,72.36867452028162)
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: mean: (973.8716400377045,604.7245544292806,416.11041886768476,975.5214758843309,709.1029167580131,220.77505590978797,362.5177329214163,929.2735138578348) std: (136.04408397359478,153.6298817242846,132.3902143128439,22.72650721669558,162.42410696071934,169.9877005298415,126.95213334445408,154.94458798993224)
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: mean: (695.707364915863,303.9336155658844,149.0251932546347,546.1597713250926,573.6516599120666,221.5914130524934,972.4008056489251,339.69313910232455) std: (43.999981682716594,34.65451744972261,193.5909604241114,66.98269165550226,123.8954878156008,173.84320886464457,118.22576890719043,181.78199411608688)
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: mean: (252.0794391533102,739.0565615538588,741.4219501145948,878.6787622247019,278.3263770993,291.57459986306355,232.63381192881528,741.6873925810975) std: (123.2276851971724,70.00433555988795,185.53513516731647,7.4407803308527365,193.87737278692535,172.85925448434733,124.2069554316308,173.2138948256254)
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: mean: (106.7946666794215,337.2988440555282,160.7443698007599,638.4827162273973,650.741326311822,523.6726354444861,450.92253549316865,572.165417157258) std: (79.3571795273922,0.2791937998192662,61.7150076675447,86.12586356524395,154.30275473855508,43.34787580517692,149.85127722615695,120.32887588310392)
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: mean: (715.9201395973375,276.5525595776116,782.134774059975,959.1942437993357,251.9295877825253,335.91053482300936,731.5789503838242,413.7030494021782) std: (155.9339406421793,124.89570555993323,77.51260535887575,193.65332907058632,44.592031963040334,135.71848377963994,100.89931605976754,162.66582801625808)
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: mean: (63.823775952771996,486.3387520074289,105.58897163458658,938.8214697720397,831.41807916693,609.0960188458906,338.94734647635494,401.4167962199837) std: (44.482830999107456,194.60201993552727,172.43639766917846,12.29674950282098,64.63058353734226,144.4029004292687,33.99248117029477,193.46635976113262)
+14/05/06 18:00:29 WARN conf.Configuration: mapred.output.compress is deprecated. Instead, use mapreduce.output.fileoutputformat.compress
+14/05/06 18:00:29 WARN conf.Configuration: mapred.output.compression.type is deprecated. Instead, use mapreduce.output.fileoutputformat.compress.type
+14/05/06 18:00:29 WARN conf.Configuration: mapred.output.compression.codec is deprecated. Instead, use mapreduce.output.fileoutputformat.compress.codec
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: mapred.output.compression.codec=org.apache.hadoop.io.compress.DefaultCodec
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: Generate K-Means input Dataset : samples = 4000sample dimension8 cluster num =8
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: Start producing samples...
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: creating file /HiBench/KMeans/Input/samples-seeds/seed0
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: creating file /HiBench/KMeans/Input/samples-seeds/seed1
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: creating file /HiBench/KMeans/Input/samples-seeds/seed2
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: creating file /HiBench/KMeans/Input/samples-seeds/seed3
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: creating file /HiBench/KMeans/Input/samples-seeds/seed4
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: creating file /HiBench/KMeans/Input/samples-seeds/seed5
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: creating file /HiBench/KMeans/Input/samples-seeds/seed6
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: creating file /HiBench/KMeans/Input/samples-seeds/seed7
+14/05/06 18:00:29 INFO kmeans.GenKMeansDatasetInteger: Generating 4000 of samples
+14/05/06 18:00:30 INFO mapred.FileInputFormat: Total input paths to process : 8
+14/05/06 18:00:30 INFO mapreduce.JobSubmitter: number of splits:8
+14/05/06 18:00:30 INFO mapreduce.Job: Running job: job_201405061757_0001
+14/05/06 18:00:31 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/06 18:00:42 INFO mapreduce.Job:  map 50% reduce 0%
+14/05/06 18:00:45 INFO mapreduce.Job:  map 62% reduce 0%
+14/05/06 18:00:46 INFO mapreduce.Job:  map 75% reduce 0%
+14/05/06 18:00:48 INFO mapreduce.Job:  map 87% reduce 0%
+14/05/06 18:00:49 INFO mapreduce.Job:  map 95% reduce 0%
+14/05/06 18:01:02 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/06 18:01:04 INFO mapreduce.Job: Job complete: job_201405061757_0001
+14/05/06 18:01:04 INFO mapreduce.Job: Counters: 20
+	FileInputFormatCounters
+		BYTES_READ=2475
+	FileSystemCounters
+		HDFS_BYTES_READ=4091
+		HDFS_BYTES_WRITTEN=331984
+	Job Counters 
+		Data-local map tasks=5
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		Rack-local map tasks=3
+		SLOTS_MILLIS_MAPS=56588
+		SLOTS_MILLIS_REDUCES=0
+		Launched map tasks=8
+	Map-Reduce Framework
+		CPU_MILLISECONDS=5760
+		Failed Shuffles=0
+		GC time elapsed (ms)=335
+		Map input records=8
+		Map output records=4000
+		Merged Map outputs=0
+		PHYSICAL_MEMORY_BYTES=742760448
+		Spilled Records=0
+		SPLIT_RAW_BYTES=936
+		VIRTUAL_MEMORY_BYTES=16355848192
+14/05/06 18:01:04 INFO kmeans.GenKMeansDatasetInteger: Finished producing samples
+14/05/06 18:01:04 INFO kmeans.GenKMeansDatasetInteger: Start generating initial cluster centers ...
+14/05/06 18:01:04 INFO kmeans.GenKMeansDatasetInteger: Finished generating initial cluster centers

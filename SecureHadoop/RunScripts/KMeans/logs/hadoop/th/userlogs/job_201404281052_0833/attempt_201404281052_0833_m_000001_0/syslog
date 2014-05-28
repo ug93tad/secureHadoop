@@ -1,0 +1,20 @@
+2014-05-02 20:13:21,247 INFO org.apache.hadoop.util.NativeCodeLoader: Loaded the native-hadoop library
+2014-05-02 20:13:21,485 INFO org.apache.hadoop.mapred.TaskRunner: Creating symlink: /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/distcache/2214871068684080106/localhost/home/dinhtta/Hadoop/tmp/mapred/staging/dinhtta/.staging/job_201404281052_0833/files/libhryto.so <- /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0833/attempt_201404281052_0833_m_000001_0/work/./libhryto.so
+2014-05-02 20:13:21,559 INFO org.apache.hadoop.mapreduce.filecache.TrackerDistributedCacheManager: Creating symlink: /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0833/jars/.job.jar.crc <- /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0833/attempt_201404281052_0833_m_000001_0/work/./.job.jar.crc
+2014-05-02 20:13:21,560 INFO org.apache.hadoop.mapreduce.filecache.TrackerDistributedCacheManager: Creating symlink: /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0833/jars/job.jar <- /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0833/attempt_201404281052_0833_m_000001_0/work/./job.jar
+2014-05-02 20:13:21,566 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=MAP, sessionId=
+2014-05-02 20:13:21,566 WARN org.apache.hadoop.conf.Configuration: user.name is deprecated. Instead, use mapreduce.job.user.name
+2014-05-02 20:13:21,694 INFO org.apache.hadoop.mapreduce.util.ProcessTree: setsid exited with exit code 0
+2014-05-02 20:13:21,726 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.mapreduce.util.LinuxResourceCalculatorPlugin@7dad44b0
+2014-05-02 20:13:21,862 INFO org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2014-05-02 20:13:21,862 INFO org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2014-05-02 20:13:21,862 INFO org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2014-05-02 20:13:21,862 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2014-05-02 20:13:21,862 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2014-05-02 20:13:22,037 INFO org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2014-05-02 20:13:22,037 INFO org.apache.hadoop.mapred.MapTask: Spilling map output
+2014-05-02 20:13:22,037 INFO org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 3684; bufvoid = 104857600
+2014-05-02 20:13:22,037 INFO org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214384(104857536); length = 13/6553600
+2014-05-02 20:13:22,051 INFO org.apache.hadoop.mapred.MapTask: Finished spill 0
+2014-05-02 20:13:22,055 INFO org.apache.hadoop.mapred.Task: Task:attempt_201404281052_0833_m_000001_0 is done. And is in the process of commiting
+2014-05-02 20:13:22,164 INFO org.apache.hadoop.mapred.Task: Task 'attempt_201404281052_0833_m_000001_0' done.

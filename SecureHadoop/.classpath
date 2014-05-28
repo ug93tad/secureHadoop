@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/uncommons-maths-1.2.2.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/hadoop-mapred-tools-0.22.0.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/hadoop-common-0.22.0.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/hadoop-hdfs-0.22.0.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/hadoop-hdfs-ant-0.22.0.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/commons-logging-api-1.1.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/hadoop-common-test-0.22.0.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/hadoop-mapred-0.22.0-sources.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/hadoop-hdfs-test-0.22.0.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/hadoop-mapred-examples-0.22.0.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/hadoop-hdfs-test-0.22.0-sources.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/hadoop-hdfs-0.22.0-sources.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/hadoop-mapred-0.22.0.jar" sourcepath="/home/dinhtta/Hadoop/hadoop-0.22.0"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/hadoop-mapred-test-0.22.0.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/SecureHadoop/secureHadoop/SecureHadoop/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/Research/HiBench/common/mahout-distribution-0.7/core/target/mahout-core-0.7.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/Research/HiBench/common/mahout-distribution-0.7/math/target/mahout-math-0.7.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/Research/HiBench/common/mahout-distribution-0.7/examples/target/mahout-examples-0.7-job.jar"/>
+	<classpathentry kind="lib" path="/home/dinhtta/Research/HiBench/common/mahout-distribution-0.7/examples/target/mahout-examples-0.7.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

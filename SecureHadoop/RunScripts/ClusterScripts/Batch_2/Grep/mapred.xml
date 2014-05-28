@@ -1,0 +1,15 @@
+<configuration>
+	<property>
+		<name>crypto.hom</name>
+		<value>true</value>
+	</property>
+        <property>
+                <name>key</name>
+                <value>hello world ande</value>
+        </property>
+        <property>
+                <name>iv</name>
+                <value>dontusethisinput</value>
+        </property>
+</configuration>
+

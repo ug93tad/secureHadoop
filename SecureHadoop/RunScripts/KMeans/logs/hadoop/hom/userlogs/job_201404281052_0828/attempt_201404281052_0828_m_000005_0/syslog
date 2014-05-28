@@ -1,0 +1,10 @@
+2014-05-02 20:08:54,673 INFO org.apache.hadoop.util.NativeCodeLoader: Loaded the native-hadoop library
+2014-05-02 20:08:54,880 INFO org.apache.hadoop.mapred.TaskRunner: Creating symlink: /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/distcache/6186926391620820913/localhost/home/dinhtta/Hadoop/tmp/mapred/staging/dinhtta/.staging/job_201404281052_0828/files/libhryto.so <- /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0828/attempt_201404281052_0828_m_000005_0/work/./libhryto.so
+2014-05-02 20:08:54,892 INFO org.apache.hadoop.mapreduce.filecache.TrackerDistributedCacheManager: Creating symlink: /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0828/jars/.job.jar.crc <- /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0828/attempt_201404281052_0828_m_000005_0/work/./.job.jar.crc
+2014-05-02 20:08:54,894 INFO org.apache.hadoop.mapreduce.filecache.TrackerDistributedCacheManager: Creating symlink: /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0828/jars/job.jar <- /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0828/attempt_201404281052_0828_m_000005_0/work/./job.jar
+2014-05-02 20:08:54,899 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=MAP, sessionId=
+2014-05-02 20:08:54,900 WARN org.apache.hadoop.conf.Configuration: user.name is deprecated. Instead, use mapreduce.job.user.name
+2014-05-02 20:08:55,033 INFO org.apache.hadoop.mapreduce.util.ProcessTree: setsid exited with exit code 0
+2014-05-02 20:08:55,039 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.mapreduce.util.LinuxResourceCalculatorPlugin@7dad44b0
+2014-05-02 20:08:55,143 INFO org.apache.hadoop.mapred.Task: Task:attempt_201404281052_0828_m_000005_0 is done. And is in the process of commiting
+2014-05-02 20:08:55,218 INFO org.apache.hadoop.mapred.Task: Task 'attempt_201404281052_0828_m_000005_0' done.

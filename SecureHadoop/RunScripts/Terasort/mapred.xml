@@ -1,0 +1,23 @@
+<configuration>
+	<property>
+		<name>crypto.hom</name>
+		<value>true</value>
+	</property>
+        <property>
+                <name>key</name>
+                <value>hello world ande</value>
+        </property>
+        <property>
+                <name>iv</name>
+                <value>dontusethisinput</value>
+        </property>
+	<property>
+		<name>ope.plaintext.length</name>
+		<value>10</value>
+	</property>
+	<property>
+		<name>ope.ciphertext.length</name>
+		<value>20</value>
+	</property>
+</configuration>
+

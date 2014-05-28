@@ -1,0 +1,629 @@
+14/05/02 17:22:57 WARN conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+14/05/02 17:22:58 INFO input.FileInputFormat: Total input paths to process : 1
+14/05/02 17:22:58 INFO mapreduce.JobSubmitter: number of splits:1
+14/05/02 17:22:58 INFO mapreduce.Job: Running job: job_201404281052_0773
+14/05/02 17:22:59 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/02 17:23:10 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/02 17:23:12 INFO mapreduce.Job: Job complete: job_201404281052_0773
+14/05/02 17:23:12 INFO mapreduce.Job: Counters: 19
+	FileInputFormatCounters
+		BYTES_READ=5678
+	FileSystemCounters
+		HDFS_BYTES_READ=5801
+		HDFS_BYTES_WRITTEN=8775
+	Job Counters 
+		Data-local map tasks=1
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=5742
+		SLOTS_MILLIS_REDUCES=0
+		Launched map tasks=1
+	Map-Reduce Framework
+		CPU_MILLISECONDS=550
+		Failed Shuffles=0
+		GC time elapsed (ms)=7
+		Map input records=100
+		Map output records=100
+		Merged Map outputs=0
+		PHYSICAL_MEMORY_BYTES=85528576
+		Spilled Records=0
+		SPLIT_RAW_BYTES=123
+		VIRTUAL_MEMORY_BYTES=1532088320
+14/05/02 17:23:13 INFO input.FileInputFormat: Total input paths to process : 1
+14/05/02 17:23:13 INFO mapreduce.JobSubmitter: number of splits:1
+14/05/02 17:23:13 INFO mapreduce.Job: Running job: job_201404281052_0774
+14/05/02 17:23:14 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/02 17:23:25 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/02 17:23:27 INFO mapreduce.Job: Job complete: job_201404281052_0774
+14/05/02 17:23:27 INFO mapreduce.Job: Counters: 19
+	FileInputFormatCounters
+		BYTES_READ=5678
+	FileSystemCounters
+		HDFS_BYTES_READ=5805
+		HDFS_BYTES_WRITTEN=8775
+	Job Counters 
+		Data-local map tasks=1
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=5668
+		SLOTS_MILLIS_REDUCES=0
+		Launched map tasks=1
+	Map-Reduce Framework
+		CPU_MILLISECONDS=510
+		Failed Shuffles=0
+		GC time elapsed (ms)=6
+		Map input records=100
+		Map output records=100
+		Merged Map outputs=0
+		PHYSICAL_MEMORY_BYTES=84926464
+		Spilled Records=0
+		SPLIT_RAW_BYTES=127
+		VIRTUAL_MEMORY_BYTES=1533734912
+rmr: cannot remove /HiBench/Pagerank/Input/pr_out_encrypt: No such file or directory.
+rmr: cannot remove /pr_tmp: No such file or directory.
+rmr: cannot remove /HiBench/Pagerank/Output/pr_check_th: No such file or directory.
+14/05/02 17:23:29 WARN conf.Configuration: mapred.used.genericoptionsparser is deprecated. Instead, use mapreduce.client.genericoptionsparser.used
+14/05/02 17:23:29 INFO input.FileInputFormat: Total input paths to process : 2
+14/05/02 17:23:29 INFO mapreduce.JobSubmitter: number of splits:2
+14/05/02 17:23:29 INFO mapreduce.Job: Running job: job_201404281052_0775
+14/05/02 17:23:30 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/02 17:23:43 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/02 17:23:49 INFO mapreduce.Job:  map 100% reduce 100%
+14/05/02 17:23:52 INFO mapreduce.Job: Job complete: job_201404281052_0775
+14/05/02 17:23:52 INFO mapreduce.Job: Counters: 37
+	FileInputFormatCounters
+		BYTES_READ=280129
+	FileSystemCounters
+		FILE_BYTES_READ=253211
+		FILE_BYTES_WRITTEN=506492
+		HDFS_BYTES_READ=280387
+		HDFS_BYTES_WRITTEN=394057
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Job Counters 
+		Data-local map tasks=2
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=12056
+		SLOTS_MILLIS_REDUCES=3822
+		Launched map tasks=2
+		Launched reduce tasks=1
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		CPU_MILLISECONDS=2650
+		Failed Shuffles=0
+		GC time elapsed (ms)=31
+		Map input records=4009
+		Map output bytes=245187
+		Map output records=4009
+		Merged Map outputs=2
+		PHYSICAL_MEMORY_BYTES=466235392
+		Reduce input groups=100
+		Reduce input records=4009
+		Reduce output records=3909
+		Reduce shuffle bytes=253217
+		Shuffled Maps =2
+		Spilled Records=8018
+		SPLIT_RAW_BYTES=258
+		VIRTUAL_MEMORY_BYTES=4536487936
+	tds.TdsOptions$HEEDOOP_COUNTER
+		RND=100
+14/05/02 17:23:52 INFO input.FileInputFormat: Total input paths to process : 3
+14/05/02 17:23:52 INFO mapreduce.JobSubmitter: number of splits:3
+14/05/02 17:23:52 INFO mapreduce.Job: Running job: job_201404281052_0776
+14/05/02 17:23:53 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/02 17:24:04 INFO mapreduce.Job:  map 66% reduce 0%
+14/05/02 17:24:11 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/02 17:24:17 INFO mapreduce.Job:  map 100% reduce 100%
+14/05/02 17:24:19 INFO mapreduce.Job: Job complete: job_201404281052_0776
+14/05/02 17:24:19 INFO mapreduce.Job: Counters: 37
+	FileInputFormatCounters
+		BYTES_READ=411607
+	FileSystemCounters
+		FILE_BYTES_READ=382694
+		FILE_BYTES_WRITTEN=765496
+		HDFS_BYTES_READ=411980
+		HDFS_BYTES_WRITTEN=10395
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Job Counters 
+		Data-local map tasks=3
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=17002
+		SLOTS_MILLIS_REDUCES=9624
+		Launched map tasks=3
+		Launched reduce tasks=1
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		CPU_MILLISECONDS=3410
+		Failed Shuffles=0
+		GC time elapsed (ms)=57
+		Map input records=4109
+		Map output bytes=374470
+		Map output records=4109
+		Merged Map outputs=3
+		PHYSICAL_MEMORY_BYTES=654364672
+		Reduce input groups=100
+		Reduce input records=4109
+		Reduce output records=100
+		Reduce shuffle bytes=382706
+		Shuffled Maps =3
+		Spilled Records=8218
+		SPLIT_RAW_BYTES=373
+		VIRTUAL_MEMORY_BYTES=6060011520
+	tds.TdsOptions$HEEDOOP_COUNTER
+		RND=4109
+14/05/02 17:24:19 INFO input.FileInputFormat: Total input paths to process : 2
+14/05/02 17:24:19 INFO mapreduce.JobSubmitter: number of splits:2
+14/05/02 17:24:19 INFO mapreduce.Job: Running job: job_201404281052_0777
+14/05/02 17:24:20 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/02 17:24:32 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/02 17:24:38 INFO mapreduce.Job:  map 100% reduce 100%
+14/05/02 17:24:40 INFO mapreduce.Job: Job complete: job_201404281052_0777
+14/05/02 17:24:40 INFO mapreduce.Job: Counters: 37
+	FileInputFormatCounters
+		BYTES_READ=281749
+	FileSystemCounters
+		FILE_BYTES_READ=254811
+		FILE_BYTES_WRITTEN=509692
+		HDFS_BYTES_READ=282007
+		HDFS_BYTES_WRITTEN=402713
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Job Counters 
+		Data-local map tasks=2
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=12031
+		SLOTS_MILLIS_REDUCES=3727
+		Launched map tasks=2
+		Launched reduce tasks=1
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		CPU_MILLISECONDS=3030
+		Failed Shuffles=0
+		GC time elapsed (ms)=50
+		Map input records=4009
+		Map output bytes=246787
+		Map output records=4009
+		Merged Map outputs=2
+		PHYSICAL_MEMORY_BYTES=471453696
+		Reduce input groups=100
+		Reduce input records=4009
+		Reduce output records=3909
+		Reduce shuffle bytes=254817
+		Shuffled Maps =2
+		Spilled Records=8018
+		SPLIT_RAW_BYTES=258
+		VIRTUAL_MEMORY_BYTES=4549455872
+	tds.TdsOptions$HEEDOOP_COUNTER
+		RND=100
+14/05/02 17:24:41 INFO input.FileInputFormat: Total input paths to process : 3
+14/05/02 17:24:41 INFO mapreduce.JobSubmitter: number of splits:3
+14/05/02 17:24:41 INFO mapreduce.Job: Running job: job_201404281052_0778
+14/05/02 17:24:42 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/02 17:24:54 INFO mapreduce.Job:  map 66% reduce 0%
+14/05/02 17:25:00 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/02 17:25:06 INFO mapreduce.Job:  map 100% reduce 100%
+14/05/02 17:25:08 INFO mapreduce.Job: Job complete: job_201404281052_0778
+14/05/02 17:25:08 INFO mapreduce.Job: Counters: 37
+	FileInputFormatCounters
+		BYTES_READ=421883
+	FileSystemCounters
+		FILE_BYTES_READ=392870
+		FILE_BYTES_WRITTEN=785848
+		HDFS_BYTES_READ=422256
+		HDFS_BYTES_WRITTEN=10395
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Job Counters 
+		Data-local map tasks=3
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=17094
+		SLOTS_MILLIS_REDUCES=9685
+		Launched map tasks=3
+		Launched reduce tasks=1
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		CPU_MILLISECONDS=3420
+		Failed Shuffles=0
+		GC time elapsed (ms)=52
+		Map input records=4109
+		Map output bytes=384646
+		Map output records=4109
+		Merged Map outputs=3
+		PHYSICAL_MEMORY_BYTES=658358272
+		Reduce input groups=100
+		Reduce input records=4109
+		Reduce output records=100
+		Reduce shuffle bytes=392882
+		Shuffled Maps =3
+		Spilled Records=8218
+		SPLIT_RAW_BYTES=373
+		VIRTUAL_MEMORY_BYTES=6066257920
+	tds.TdsOptions$HEEDOOP_COUNTER
+		RND=4109
+14/05/02 17:25:08 INFO input.FileInputFormat: Total input paths to process : 2
+14/05/02 17:25:08 INFO mapreduce.JobSubmitter: number of splits:2
+14/05/02 17:25:09 INFO mapreduce.Job: Running job: job_201404281052_0779
+14/05/02 17:25:10 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/02 17:25:22 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/02 17:25:28 INFO mapreduce.Job:  map 100% reduce 100%
+14/05/02 17:25:30 INFO mapreduce.Job: Job complete: job_201404281052_0779
+14/05/02 17:25:30 INFO mapreduce.Job: Counters: 37
+	FileInputFormatCounters
+		BYTES_READ=281749
+	FileSystemCounters
+		FILE_BYTES_READ=254811
+		FILE_BYTES_WRITTEN=509692
+		HDFS_BYTES_READ=282007
+		HDFS_BYTES_WRITTEN=402713
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Job Counters 
+		Data-local map tasks=2
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=11868
+		SLOTS_MILLIS_REDUCES=3733
+		Launched map tasks=2
+		Launched reduce tasks=1
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		CPU_MILLISECONDS=2780
+		Failed Shuffles=0
+		GC time elapsed (ms)=43
+		Map input records=4009
+		Map output bytes=246787
+		Map output records=4009
+		Merged Map outputs=2
+		PHYSICAL_MEMORY_BYTES=448086016
+		Reduce input groups=100
+		Reduce input records=4009
+		Reduce output records=3909
+		Reduce shuffle bytes=254817
+		Shuffled Maps =2
+		Spilled Records=8018
+		SPLIT_RAW_BYTES=258
+		VIRTUAL_MEMORY_BYTES=4555182080
+	tds.TdsOptions$HEEDOOP_COUNTER
+		RND=100
+14/05/02 17:25:30 INFO input.FileInputFormat: Total input paths to process : 3
+14/05/02 17:25:30 INFO mapreduce.JobSubmitter: number of splits:3
+14/05/02 17:25:30 INFO mapreduce.Job: Running job: job_201404281052_0780
+14/05/02 17:25:31 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/02 17:25:43 INFO mapreduce.Job:  map 66% reduce 0%
+14/05/02 17:25:49 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/02 17:25:55 INFO mapreduce.Job:  map 100% reduce 100%
+14/05/02 17:25:57 INFO mapreduce.Job: Job complete: job_201404281052_0780
+14/05/02 17:25:57 INFO mapreduce.Job: Counters: 37
+	FileInputFormatCounters
+		BYTES_READ=421883
+	FileSystemCounters
+		FILE_BYTES_READ=392870
+		FILE_BYTES_WRITTEN=785848
+		HDFS_BYTES_READ=422256
+		HDFS_BYTES_WRITTEN=10395
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Job Counters 
+		Data-local map tasks=3
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=16858
+		SLOTS_MILLIS_REDUCES=9672
+		Launched map tasks=3
+		Launched reduce tasks=1
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		CPU_MILLISECONDS=3280
+		Failed Shuffles=0
+		GC time elapsed (ms)=37
+		Map input records=4109
+		Map output bytes=384646
+		Map output records=4109
+		Merged Map outputs=3
+		PHYSICAL_MEMORY_BYTES=664825856
+		Reduce input groups=100
+		Reduce input records=4109
+		Reduce output records=100
+		Reduce shuffle bytes=392882
+		Shuffled Maps =3
+		Spilled Records=8218
+		SPLIT_RAW_BYTES=373
+		VIRTUAL_MEMORY_BYTES=6042378240
+	tds.TdsOptions$HEEDOOP_COUNTER
+		RND=4109
+14/05/02 17:25:57 INFO input.FileInputFormat: Total input paths to process : 2
+14/05/02 17:25:58 INFO mapreduce.JobSubmitter: number of splits:2
+14/05/02 17:25:58 INFO mapreduce.Job: Running job: job_201404281052_0781
+14/05/02 17:25:59 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/02 17:26:10 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/02 17:26:16 INFO mapreduce.Job:  map 100% reduce 100%
+14/05/02 17:26:18 INFO mapreduce.Job: Job complete: job_201404281052_0781
+14/05/02 17:26:18 INFO mapreduce.Job: Counters: 37
+	FileInputFormatCounters
+		BYTES_READ=281749
+	FileSystemCounters
+		FILE_BYTES_READ=254811
+		FILE_BYTES_WRITTEN=509692
+		HDFS_BYTES_READ=282007
+		HDFS_BYTES_WRITTEN=402713
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Job Counters 
+		Data-local map tasks=2
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=11897
+		SLOTS_MILLIS_REDUCES=3806
+		Launched map tasks=2
+		Launched reduce tasks=1
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		CPU_MILLISECONDS=2810
+		Failed Shuffles=0
+		GC time elapsed (ms)=52
+		Map input records=4009
+		Map output bytes=246787
+		Map output records=4009
+		Merged Map outputs=2
+		PHYSICAL_MEMORY_BYTES=458903552
+		Reduce input groups=100
+		Reduce input records=4009
+		Reduce output records=3909
+		Reduce shuffle bytes=254817
+		Shuffled Maps =2
+		Spilled Records=8018
+		SPLIT_RAW_BYTES=258
+		VIRTUAL_MEMORY_BYTES=4545757184
+	tds.TdsOptions$HEEDOOP_COUNTER
+		RND=100
+14/05/02 17:26:18 INFO input.FileInputFormat: Total input paths to process : 3
+14/05/02 17:26:18 INFO mapreduce.JobSubmitter: number of splits:3
+14/05/02 17:26:18 INFO mapreduce.Job: Running job: job_201404281052_0782
+14/05/02 17:26:19 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/02 17:26:31 INFO mapreduce.Job:  map 66% reduce 0%
+14/05/02 17:26:37 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/02 17:26:43 INFO mapreduce.Job:  map 100% reduce 100%
+14/05/02 17:26:46 INFO mapreduce.Job: Job complete: job_201404281052_0782
+14/05/02 17:26:46 INFO mapreduce.Job: Counters: 37
+	FileInputFormatCounters
+		BYTES_READ=421883
+	FileSystemCounters
+		FILE_BYTES_READ=392870
+		FILE_BYTES_WRITTEN=785848
+		HDFS_BYTES_READ=422256
+		HDFS_BYTES_WRITTEN=10395
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Job Counters 
+		Data-local map tasks=3
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=16641
+		SLOTS_MILLIS_REDUCES=9652
+		Launched map tasks=3
+		Launched reduce tasks=1
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		CPU_MILLISECONDS=3280
+		Failed Shuffles=0
+		GC time elapsed (ms)=46
+		Map input records=4109
+		Map output bytes=384646
+		Map output records=4109
+		Merged Map outputs=3
+		PHYSICAL_MEMORY_BYTES=644505600
+		Reduce input groups=100
+		Reduce input records=4109
+		Reduce output records=100
+		Reduce shuffle bytes=392882
+		Shuffled Maps =3
+		Spilled Records=8218
+		SPLIT_RAW_BYTES=373
+		VIRTUAL_MEMORY_BYTES=6038978560
+	tds.TdsOptions$HEEDOOP_COUNTER
+		RND=4109
+14/05/02 17:26:46 INFO input.FileInputFormat: Total input paths to process : 2
+14/05/02 17:26:46 INFO mapreduce.JobSubmitter: number of splits:2
+14/05/02 17:26:46 INFO mapreduce.Job: Running job: job_201404281052_0783
+14/05/02 17:26:47 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/02 17:26:59 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/02 17:27:05 INFO mapreduce.Job:  map 100% reduce 100%
+14/05/02 17:27:07 INFO mapreduce.Job: Job complete: job_201404281052_0783
+14/05/02 17:27:07 INFO mapreduce.Job: Counters: 37
+	FileInputFormatCounters
+		BYTES_READ=281749
+	FileSystemCounters
+		FILE_BYTES_READ=254811
+		FILE_BYTES_WRITTEN=509692
+		HDFS_BYTES_READ=282007
+		HDFS_BYTES_WRITTEN=402713
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Job Counters 
+		Data-local map tasks=2
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=11604
+		SLOTS_MILLIS_REDUCES=3719
+		Launched map tasks=2
+		Launched reduce tasks=1
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		CPU_MILLISECONDS=2840
+		Failed Shuffles=0
+		GC time elapsed (ms)=43
+		Map input records=4009
+		Map output bytes=246787
+		Map output records=4009
+		Merged Map outputs=2
+		PHYSICAL_MEMORY_BYTES=451141632
+		Reduce input groups=100
+		Reduce input records=4009
+		Reduce output records=3909
+		Reduce shuffle bytes=254817
+		Shuffled Maps =2
+		Spilled Records=8018
+		SPLIT_RAW_BYTES=258
+		VIRTUAL_MEMORY_BYTES=4536299520
+	tds.TdsOptions$HEEDOOP_COUNTER
+		RND=100
+14/05/02 17:27:07 INFO input.FileInputFormat: Total input paths to process : 3
+14/05/02 17:27:07 INFO mapreduce.JobSubmitter: number of splits:3
+14/05/02 17:27:08 INFO mapreduce.Job: Running job: job_201404281052_0784
+14/05/02 17:27:09 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/02 17:27:21 INFO mapreduce.Job:  map 66% reduce 0%
+14/05/02 17:27:27 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/02 17:27:33 INFO mapreduce.Job:  map 100% reduce 100%
+14/05/02 17:27:35 INFO mapreduce.Job: Job complete: job_201404281052_0784
+14/05/02 17:27:35 INFO mapreduce.Job: Counters: 37
+	FileInputFormatCounters
+		BYTES_READ=421883
+	FileSystemCounters
+		FILE_BYTES_READ=392870
+		FILE_BYTES_WRITTEN=785848
+		HDFS_BYTES_READ=422256
+		HDFS_BYTES_WRITTEN=10395
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Job Counters 
+		Data-local map tasks=3
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=17102
+		SLOTS_MILLIS_REDUCES=9622
+		Launched map tasks=3
+		Launched reduce tasks=1
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		CPU_MILLISECONDS=3460
+		Failed Shuffles=0
+		GC time elapsed (ms)=43
+		Map input records=4109
+		Map output bytes=384646
+		Map output records=4109
+		Merged Map outputs=3
+		PHYSICAL_MEMORY_BYTES=658833408
+		Reduce input groups=100
+		Reduce input records=4109
+		Reduce output records=100
+		Reduce shuffle bytes=392882
+		Shuffled Maps =3
+		Spilled Records=8218
+		SPLIT_RAW_BYTES=373
+		VIRTUAL_MEMORY_BYTES=6047207424
+	tds.TdsOptions$HEEDOOP_COUNTER
+		RND=4109
+14/05/02 17:27:35 INFO input.FileInputFormat: Total input paths to process : 1
+14/05/02 17:27:35 INFO mapreduce.JobSubmitter: number of splits:1
+14/05/02 17:27:35 INFO mapreduce.Job: Running job: job_201404281052_0785
+14/05/02 17:27:36 INFO mapreduce.Job:  map 0% reduce 0%
+14/05/02 17:27:44 INFO mapreduce.Job:  map 100% reduce 0%
+14/05/02 17:27:50 INFO mapreduce.Job:  map 100% reduce 100%
+14/05/02 17:27:52 INFO mapreduce.Job: Job complete: job_201404281052_0785
+14/05/02 17:27:52 INFO mapreduce.Job: Counters: 36
+	FileInputFormatCounters
+		BYTES_READ=10395
+	FileSystemCounters
+		FILE_BYTES_READ=1296
+		FILE_BYTES_WRITTEN=2624
+		HDFS_BYTES_READ=10530
+		HDFS_BYTES_WRITTEN=2149
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	Job Counters 
+		Data-local map tasks=1
+		Total time spent by all maps waiting after reserving slots (ms)=0
+		Total time spent by all reduces waiting after reserving slots (ms)=0
+		SLOTS_MILLIS_MAPS=3547
+		SLOTS_MILLIS_REDUCES=3495
+		Launched map tasks=1
+		Launched reduce tasks=1
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		CPU_MILLISECONDS=1200
+		Failed Shuffles=0
+		GC time elapsed (ms)=10
+		Map input records=100
+		Map output bytes=1090
+		Map output records=100
+		Merged Map outputs=1
+		PHYSICAL_MEMORY_BYTES=281231360
+		Reduce input groups=100
+		Reduce input records=100
+		Reduce output records=100
+		Reduce shuffle bytes=1296
+		Shuffled Maps =1
+		Spilled Records=200
+		SPLIT_RAW_BYTES=135
+		VIRTUAL_MEMORY_BYTES=3046662144

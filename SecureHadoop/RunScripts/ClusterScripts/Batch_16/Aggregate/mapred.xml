@@ -1,0 +1,23 @@
+<configuration>
+	<property>
+		<name>crypto.hom</name>
+		<value>true</value>
+	</property>
+        <property>
+                <name>key</name>
+                <value>hello world ande</value>
+        </property>
+        <property>
+                <name>iv</name>
+                <value>dontusethisinput</value>
+        </property>
+	<property>
+		<name>paillier.pub.key</name>
+		<value>/home/dinhtta/paillier.pub</value>
+	</property>
+	<property>
+		<name>paillier.priv.key</name>
+		<value>/home/dinhtta/paillier.priv</value>
+	</property>
+</configuration>
+

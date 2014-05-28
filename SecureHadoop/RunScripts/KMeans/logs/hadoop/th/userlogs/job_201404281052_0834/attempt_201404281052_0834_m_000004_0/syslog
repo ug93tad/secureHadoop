@@ -1,0 +1,12 @@
+2014-05-02 20:14:11,844 INFO org.apache.hadoop.util.NativeCodeLoader: Loaded the native-hadoop library
+2014-05-02 20:14:12,023 INFO org.apache.hadoop.mapred.TaskRunner: Creating symlink: /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/distcache/5364339939591247629/localhost/home/dinhtta/Hadoop/tmp/mapred/staging/dinhtta/.staging/job_201404281052_0834/files/libhryto.so <- /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0834/attempt_201404281052_0834_m_000004_0/work/./libhryto.so
+2014-05-02 20:14:12,057 INFO org.apache.hadoop.mapreduce.filecache.TrackerDistributedCacheManager: Creating symlink: /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0834/jars/.job.jar.crc <- /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0834/attempt_201404281052_0834_m_000004_0/work/./.job.jar.crc
+2014-05-02 20:14:12,059 INFO org.apache.hadoop.mapreduce.filecache.TrackerDistributedCacheManager: Creating symlink: /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0834/jars/job.jar <- /home/dinhtta/Hadoop/tmp/mapred/local/taskTracker/dinhtta/jobcache/job_201404281052_0834/attempt_201404281052_0834_m_000004_0/work/./job.jar
+2014-05-02 20:14:12,066 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=MAP, sessionId=
+2014-05-02 20:14:12,066 WARN org.apache.hadoop.conf.Configuration: user.name is deprecated. Instead, use mapreduce.job.user.name
+2014-05-02 20:14:12,343 INFO org.apache.hadoop.mapreduce.util.ProcessTree: setsid exited with exit code 0
+2014-05-02 20:14:12,372 INFO org.apache.hadoop.mapred.Task:  Using ResourceCalculatorPlugin : org.apache.hadoop.mapreduce.util.LinuxResourceCalculatorPlugin@5c64798e
+2014-05-02 20:14:12,460 INFO org.apache.hadoop.mapred.Task: Cleaning up job
+2014-05-02 20:14:12,460 INFO org.apache.hadoop.mapred.Task: Committing job
+2014-05-02 20:14:12,537 INFO org.apache.hadoop.mapred.Task: Task:attempt_201404281052_0834_m_000004_0 is done. And is in the process of commiting
+2014-05-02 20:14:12,613 INFO org.apache.hadoop.mapred.Task: Task 'attempt_201404281052_0834_m_000004_0' done.
